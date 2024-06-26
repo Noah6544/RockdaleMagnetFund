@@ -619,6 +619,10 @@ video {
   height: 100dvh;
 }
 
+.h-\[85dvh\] {
+  height: 85dvh;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -665,6 +669,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .items-center {
@@ -769,6 +777,16 @@ video {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
