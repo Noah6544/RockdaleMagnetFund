@@ -2,6 +2,9 @@
 module.exports = {
   content: ['./dist/**/*.{html,js}'],
   theme: {
+    fontFamily:{
+      sans: []
+    }
     extend: {
       colors:{
         'color-navbar': ' #EEF1F6',
