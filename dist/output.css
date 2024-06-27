@@ -558,6 +558,10 @@ video {
   pointer-events: none;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -582,6 +586,10 @@ video {
   right: -150px;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .top-1 {
   top: 0.25rem;
 }
@@ -592,6 +600,10 @@ video {
 
 .z-10 {
   z-index: 10;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .mx-2 {
@@ -627,8 +639,20 @@ video {
   height: 100dvh;
 }
 
+.h-\[140dvh\] {
+  height: 140dvh;
+}
+
 .h-\[50dvh\] {
   height: 50dvh;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.h-dvh {
+  height: 100dvh;
 }
 
 .w-0 {
@@ -647,6 +671,10 @@ video {
   width: 75%;
 }
 
+.w-\[100vw\] {
+  width: 100vw;
+}
+
 .w-\[25vw\] {
   width: 25vw;
 }
@@ -655,12 +683,24 @@ video {
   width: 100vw;
 }
 
+.w-dvw {
+  width: 100dvw;
+}
+
+.min-w-12 {
+  min-width: 3rem;
+}
+
 .min-w-36 {
   min-width: 9rem;
 }
 
 .max-w-44 {
   max-width: 11rem;
+}
+
+.max-w-96 {
+  max-width: 24rem;
 }
 
 .rotate-\[26deg\] {
@@ -681,10 +721,6 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
-}
-
-.list-disc {
-  list-style-type: disc;
 }
 
 .flex-col {
@@ -719,12 +755,20 @@ video {
   gap: 5rem;
 }
 
+.gap-3 {
+  gap: 0.75rem;
+}
+
 .gap-8 {
   gap: 2rem;
 }
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-clip {
+  overflow: clip;
 }
 
 .overflow-x-hidden {
@@ -758,8 +802,7 @@ video {
 }
 
 .bg-color-body {
-  --tw-bg-opacity: 1;
-  background-color: rgb(238 241 246 / var(--tw-bg-opacity));
+  background-color: hsla(218, 31%, 95%, 0.91);
 }
 
 .bg-color-button {
@@ -768,8 +811,11 @@ video {
 }
 
 .bg-color-navbar {
-  --tw-bg-opacity: 1;
-  background-color: rgb(238 241 246 / var(--tw-bg-opacity));
+  background-color: hsla(218, 31%, 950%, 1);
+}
+
+.bg-color-dropdown-navbar {
+  background-color: hsla(218, 31%, 950%, 1);
 }
 
 .object-cover {
@@ -802,8 +848,9 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.pb-\[15dvh\] {
-  padding-bottom: 15dvh;
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .text-center {
@@ -828,6 +875,21 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold {
@@ -857,6 +919,10 @@ video {
 
 .opacity-100 {
   opacity: 1;
+}
+
+.opacity-20 {
+  opacity: 0.2;
 }
 
 .ring-1 {

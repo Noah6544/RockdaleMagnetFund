@@ -2,13 +2,12 @@
 module.exports = {
   content: ['./dist/**/*.{html,js}'],
   theme: {
-    fontFamily:{
-      sans: []
-    }
     extend: {
       colors:{
-        'color-navbar': ' #EEF1F6',
-        'color-body': '#EEF1F6',
+        'color-dropdown-navbar': 'hsla(218, 31%, 950%, 1)',
+
+        'color-navbar': 'hsla(218, 31%, 950%, 1)',
+        'color-body': 'hsla(218, 31%, 95%, 0.91)',
         'color-button': '#7EAAFF',
         'color-button-hover': '#6699ff',
         'color-blue-hexagon': '#0C71C3',
