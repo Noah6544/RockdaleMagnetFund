@@ -3,22 +3,18 @@
 //RUNNING CODE
 
 const menu = document.getElementById("menu");
-const navbar = document.getElementById("navbar")
+const mobileNavbar = document.getElementById("mobileNavbar")
 var isOpen = false;
-console.log(window.innerWidth);
-
 
 menu.addEventListener("click", function(){
-  menu.classList.toggle("menu-open");
+  mobileNavbar.classList.remove("opacity-0");
 
   if(isOpen){
-    navbar.classList.remove("navbar")
-    navbar.classList.add("navbar-hidden")
+    mobileNavbar.classList.add("opacity-0")
     isOpen = false;
   }
   else{
-    navbar.classList.remove("navbar-hidden")
-    navbar.classList.add("navbar")
+    mobileNavbar.classList.remove("opacity-0")
     isOpen = true;
   }
-}
+})

@@ -11,6 +11,7 @@ module.exports = {
         'color-button': '#7EAAFF',
         'color-button-hover': '#6699ff',
         'color-blue-hexagon': '#0C71C3',
+        'color-menu': 'hsla(0, 0%, 0%, .5)'
 
       }
     },
