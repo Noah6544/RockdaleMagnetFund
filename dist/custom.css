@@ -1,4 +1,5 @@
 .hexagon-mask-image{
+  
     -webkit-mask-image: url(./static/hexagon.svg);
     mask-image: url(./static/hexagon.svg);
     -webkit-mask-repeat: no-repeat;
