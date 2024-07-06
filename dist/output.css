@@ -720,10 +720,6 @@ video {
   width: 100vw;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .min-w-12 {
   min-width: 3rem;
 }
@@ -746,10 +742,6 @@ video {
 
 .shrink {
   flex-shrink: 1;
-}
-
-.flex-grow {
-  flex-grow: 1;
 }
 
 .origin-center {
@@ -784,6 +776,10 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -1127,24 +1123,12 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:fixed {
-    position: fixed;
-  }
-
   .md\:absolute {
     position: absolute;
   }
 
   .md\:top-0 {
     top: 0px;
-  }
-
-  .md\:right-96 {
-    right: 24rem;
-  }
-
-  .md\:right-20 {
-    right: 5rem;
   }
 
   .md\:flex {
@@ -1185,10 +1169,6 @@ video {
 
   .md\:items-center {
     align-items: center;
-  }
-
-  .md\:justify-between {
-    justify-content: space-between;
   }
 
   .md\:justify-evenly {
