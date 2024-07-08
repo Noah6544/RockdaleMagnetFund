@@ -1,7 +1,7 @@
 @keyframes body-fade-in {
   from {
       opacity: 0;
-      transform: translateY(-40px);
+      transform: translateY(-10px);
   }
  to {
       opacity: 1;
@@ -24,7 +24,8 @@
   }
   to{
     opacity: 1;
-    transform: translateX(0%);
+    transform: translateX(0px);
+
   }
   
 }
@@ -43,15 +44,14 @@
     fill: black;
 }
 
-body { 
+#landingPage { 
     animation: 1s body-fade-in;
 }
 .onScrollHidden{
   opacity: 0;
-  transform: translateX(-5%);
+  transform: translateX(-5px);
 }
+
 .onScrollView{
-  opacity: 1;
-  transform: translateX(0%);
-  animation: onScrollView 3s 2s forwards;
+  animation: onScrollView 1s .2s forwards;
 }

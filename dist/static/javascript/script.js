@@ -1,17 +1,15 @@
 //FUNCTIONS
 
-const CheckItemInView = new IntersectionObserver((element) => { //figure out this issue and why it's not working
-    console.log(element)
+const CheckItemInView = new IntersectionObserver((entries) => { //figure out this issue and why it's not working
+  entries.forEach(element => {
     if(element.isIntersecting){
-      element.classList.add("onScrollView");
-      console.log("added!s");
+      element.target.classList.add("onScrollView"); //.TARGET makes it work, idk why
       return true;
     }
     else{
-      console.log("asdf")
       return false;
     }
-  ;
+  });
   
 });
 
@@ -36,5 +34,6 @@ menu.addEventListener("click", function(){
     isOpen = true;
   }
 });
+
 
 onScrollItems.forEach(element => CheckItemInView.observe(element));
