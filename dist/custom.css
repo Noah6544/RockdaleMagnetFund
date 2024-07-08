@@ -32,7 +32,7 @@
 
 #menu{
   opacity: 0;
-  animation: 2s 2s fade-in forwards;
+  animation: 2s 1s fade-in forwards;
 }
 
 
@@ -54,4 +54,18 @@
 
 .onScrollView{
   animation: onScrollView 1s .2s forwards;
+}
+
+.mobileNavbarListHidden{
+  opacity:0;
+  transform: translateX(-15px);
+  transition: opacity .3s, transform .7s cubic-bezier(.1,-0.01,0,.97);
+}
+
+.mobileNavbarListShow{
+  opacity: 1;
+  transform: translateX(0px);
+  transition: opacity .3s, transform .7s cubic-bezier(.1,-0.01,0,.97);
+
+
 }

@@ -23,20 +23,20 @@
 
 <div id="mobileNavbar" class="fixed opacity-0 pointer-events-none top-0 items-center justify-center z-40 transition-all ease-in duration-200  lg:hidden "><!--mobile navbar-->
 
-    <div class="flex flex-col h-screen w-screen justify-evenly bg-color-dropdown-navbar  drop-shadow-lg delay-75"> 
+    <div class="flex flex-col h-screen w-screen justify-evenly bg-color-dropdown-navbar  drop-shadow-lg"> 
 
         <div class="w-screen pointer-events-none h-screen  opacity-20 py-3 gap-3 absolute flex top-0 left-0 text-md justify-center blur-sm items-center">
             <img class="drop-shadow min-w-12 w-[100vw] max-w-96"src="./static/images/RMSST Square.png" alt="">            
         </div>
 
         <div class="flex flex-col justify-center items-center gap-8 text-lg drop-shadow-md ">
-            <a href="./about.html" class="hover:text-color-button"><div class="">About</div></a>
-            <a href="./contact.html" class="hover:text-color-button"><div class="">Contact</div></a>
-            <a href="./fundraising.html" class="hover:text-color-button"><div class="">Fundraising</div></a>
-            <a href="./scholarships.html" class="hover:text-color-button"><div class="">Alumi Scholarships</div></a>
-            <a href="./html" class="hover:text-color-button"><div class="">Annual Dues</div></a>
-            <a href="./donations.html" class="hover:text-color-button"><div class="">Donations</div></a>
-            <a href="index.html" class="hover:text-color-button"><div>Home</div></a>
+            <a href="./about.html" class="mobileNavbarListHidden hover:text-color-button "><div class="">About</div></a>
+            <a href="./contact.html" class="mobileNavbarListHidden hover:text-color-button"><div class="">Contact</div></a>
+            <a href="./fundraising.html" class="mobileNavbarListHidden hover:text-color-button"><div class="">Fundraising</div></a>
+            <a href="./scholarships.html" class="mobileNavbarListHidden hover:text-color-button"><div class="">Alumi Scholarships</div></a>
+            <a href="./html" class="mobileNavbarListHidden hover:text-color-button"><div class="">Annual Dues</div></a>
+            <a href="./donations.html" class="mobileNavbarListHidden hover:text-color-button"><div class="">Donations</div></a>
+            <a href="index.html" class="mobileNavbarListHidden hover:text-color-button"><div>Home</div></a>
 
         </div>
     </div>   
@@ -55,7 +55,7 @@
         <div class="">Rockdale Magnet Fund</div> </a>
     </div>
 
-    <div class="flex pr-8 items-center h-full p-2 gap-4 text-sm">
+    <div mobileNavbarListHidden class="flex pr-8 items-center h-full p-2 gap-4 text-sm">
         <a href="./about.html" class="hover:text-color-button"><div class="">About</div></a>
         <a href="./contact.html" class="hover:text-color-button"><div class="">Contact</div></a>
         <a href="./fundraising.html" class="hover:text-color-button"><div class="">Fundraising</div></a>
