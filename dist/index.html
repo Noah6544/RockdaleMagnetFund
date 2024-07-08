@@ -10,9 +10,9 @@
     <title>Rockdale Magnet Fund</title>
 </head>
 
-<body class="bg-color-body flex flex-col justify-center ">
+<body class="bg-color-body flex flex-col justify-center w-screen items-center">
 
-<div class="fixed top-0 right-0 z-50 m-8 p-1 md:hidden hover:opacity-90 cursor-pointer transition-all duration-200 origin-center hover:scale-x-110 ease-exetremeBounce" id="menu">
+<div class="fixed top-0 right-0 z-50 m-8 p-1 lg:hidden hover:opacity-90 cursor-pointer transition-all duration-200 origin-center hover:scale-x-110 ease-exetremeBounce" id="menu">
 
     <i class="rounded-full block w-8 h-[4px] bg-color-menu"></i>
 
@@ -21,7 +21,7 @@
 
 </div>  
 
-<div id="mobileNavbar" class="fixed opacity-0 pointer-events-none top-0 items-center justify-center z-40 transition-all ease-in duration-200 md:hidden "><!--mobile navbar-->
+<div id="mobileNavbar" class="fixed opacity-0 pointer-events-none top-0 items-center justify-center z-40 transition-all ease-in duration-200  lg:hidden "><!--mobile navbar-->
 
     <div class="flex flex-col h-screen w-screen justify-evenly bg-color-dropdown-navbar  drop-shadow-lg delay-75"> 
 
@@ -45,7 +45,7 @@
 </div>  
   
 
-<div id="desktopNavbar" class="hidden md:flex fixed top-0 left-0 md:w-screen justify-between items-center bg-color-navbar z-10 drop-shadow-lg h-16 opacity-100 ">
+<div id="desktopNavbar" class="hidden fixed top-0 left-0 lg:w-screen justify-between items-center bg-color-navbar z-10 drop-shadow-lg h-16 opacity-100 lg:flex ">
 
     <div class="flex p-2 items-center gap-4 h-full justify-between text-md shrink">
         <div class="h-full">
@@ -67,24 +67,24 @@
 </div>   <!--desktop navbar-->
 
 
-<div id="mainbody" class="drop-shadow-sm flex flex-col w-100% items-center justify-center h-[100dvh] gap-8 md:flex-row-reverse md:justify-evenly md:gap-2 " ><!--MAIN BODY--> 
+<div id="mainbody" class="drop-shadow-sm flex flex-col lg:w-100% self-center items-center justify-center h-[100dvh] gap-8 md:gap-12 lg:flex-row-reverse lg:justify-evenly lg:gap-2 " ><!--MAIN BODY--> 
 
     <div class="flex w-100% justify-center"> <!--right image section-->
-        <img class="drop-shadow h-auto min-w-32 w-[40vw] max-w-52 md:w-[50vw]" src="./static/images/RMSST Square.png" alt="">
+        <img class="drop-shadow h-auto min-w-32 w-[40vw] max-w-44  lg:w-[20vw] lg:max-w-none" src="./static/images/RMSST Square.png" alt="">
     </div> <!--IMAGE-->
 
-    <div class="flex gap-8 items-center flex-col text-sm w-3/4 md:w-1/3 md:text-left md:gap-10"> <!--left text section-->
+    <div class="flex gap-8 md:gap-12 items-center flex-col text-sm w-3/4 lg:w-1/3 lg:text-left lg:gap-10"> <!--left text section-->
 
        
-        <div class="text-xl font-medium text-nowrap md:text-4xl md:text-left md:w-full ">Rockdale Magnet Fund</div>
-        <div class="text-center text-xl md:text-2xl md:text-left">Providing students with the support and resources to succeed and change the world!</div>
+        <div class="text-xl font-medium text-nowrap md:text-3xl lg:text-3xl lg:text-left lg:w-full ">Rockdale Magnet Fund</div>
+        <div class="text-center text-xl md:w-3/4 lg:text-2xl lg:text-left">Providing students with the support and resources to succeed and change the world!</div>
 
-        <div class="flex flex-col gap-8 justify-around text-base  md:text-lg md:flex-row md:w-full md:gap-0 md:items-center"> <!--button section-->
+        <div class="flex flex-col gap-8 justify-around text-base  lg:text-lg md:flex-row lg:w-full lg:gap-0 lg:items-center"> <!--button section-->
 
             <a href="example.com" target="_blank">
-            <div class="text-center drop-shadow-md rounded-lg  bg-color-button transition-all duration-100 cursor-pointer px-4 py-2 hover:bg-color-button-hover md:w-full md:px-12">Get Involved</div>
+            <div class="text-center drop-shadow-md rounded-lg  bg-color-button transition-all duration-100 cursor-pointer px-4 py-2 hover:bg-color-button-hover lg:w-full lg:px-12 hover:px-8">Get Involved</div>
             </a> <!--button-->
-            <div class=" text-center drop-shadow-md rounded-lg bg-color-button transition-all duration-100  cursor-pointer hover:bg-color-button-hover px-4 py-2  md:px-12">Learn More</div> <!--button--> 
+            <div class=" text-center drop-shadow-md rounded-lg bg-color-button transition-all duration-100  cursor-pointer hover:bg-color-button-hover px-4 py-2  lg:px-12">Learn More</div> <!--button--> 
         </div>
 
     </div> 
@@ -94,35 +94,35 @@
 
 <div class="h-0 w-0 overflow-hidden"> <!--hexagon-->
 
-  <div class="absolute pointer-events-none blur-sm drop-shadow-lg top-[-35px] left-[-150px] rotate-[26deg] scale-125 md:">
+  <div class="absolute pointer-events-none blur-sm drop-shadow-lg top-[-35px] left-[-150px] rotate-[26deg] scale-125 lg:">
     <svg xmlns="http://www.w3.org/2000/svg" width="256px" height="256px" viewBox="0 0 24.00 24.00" fill="none">
         <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke='#0C71C3'stroke-width="0.1" stroke-linejoin="miter"/>
         </svg>  
     </div>
 </div>
 
-<div class="pointer-events-none blur-sm drop-shadow-lg bottom-[-35px] right-[-150px] rotate-[75deg] md:scale-[4] md:bottom-[0px] md:right-[10px] md:rotate-[0deg]"> <!--hexagon-->
+<div class="pointer-events-none blur-sm drop-shadow-lg bottom-[-35px] right-[-150px] rotate-[75deg] lg:scale-[4] lg:bottom-[0px] lg:right-[10px] lg:rotate-[0deg]"> <!--hexagon-->
     
-    <svg xmlns="http://www.w3.org/2000/svg" width="256px" height="256px" viewBox="0 0 24.00 24.00" fill="none">
-        <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke="#ff0000" stroke-width="0.1" stroke-linejoin="miter"/>
-    </svg>  </div>
-
-        
-</div>
-<div class="hexagon-mask-image flex   drop-shadow-md  justify-center">
-    <img class=" w-full fill-black h-full  drop-shadow-md  rounded-xl object-cover" src="./static/images/magnet.jpg" alt="">
- 
+<svg xmlns="http://www.w3.org/2000/svg" width="256px" height="256px" viewBox="0 0 24.00 24.00" fill="none">
+    <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke="#ff0000" stroke-width="0.1" stroke-linejoin="miter"/>
+</svg>  </div>
 </div>
 
+<div class="drop-shadow-lg md:w-[65vw] flex justify-center">
+<div class="hexagon-mask-image ">
+    <img class=" rounded-xl object-cover" src="./static/images/magnet.jpg" alt="">
+</div>
+</div>
 
-<div class="text-sm italic text-center">An aerial view of RMSST!</div> <!--CAPTION-->
 
-<div id="mainbody" class="drop-shadow-xl flex flex-col w-full items-center justify-center h-[80dvh] gap-16 md:flex-col-reverse"><!--MAIN BODY--> 
-<div class="flex gap-8 items-center flex-col text-sm w-3/4 justify-center "> <!--left text section-->
-    <div class="text-2xl font-medium text-nowrap">What is the Fund?
+<div class="text-sm italic text-center md:text-base">An aerial view of RMSST!</div> <!--CAPTION-->
+
+<div id="mainbody" class="drop-shadow-xl flex flex-col w-full items-center justify-center h-[80dvh] gap-16 lg:flex-col-reverse"><!--MAIN BODY--> 
+<div class="flex gap-8 items-center flex-col text-sm md:w-3/4 justify-center "> <!--left text section-->
+    <div class="text-2xl font-medium text-nowrap onScrollHidden">What is the Fund?
     </div>
-    <div class="text-md  text-center">
-        Founded in 2007, the Rockdale Magnet Fund is the parent organization “booster club” established to support the students, faculty, staff, and parents of the Rockdale Magnet School for Science and Technology (RMSST) located in Conyers, Georgia. 
+    <div class="text-md text-center md:text-lg md:w-3/4 onScrollHidden">
+        Founded in 2007, the Rockdale Magnet Fund is the parent organization “booster club” established to support the students, faculty, staff, and parents of the Rockdale Magnet School for Science and Technology (RMSST) in Conyers, Georgia. 
         <br><br>
         We believe parent involvement should be one of the foundations of the strength of our school.  We are a volunteer organization providing support to our school, which would not be possible without the generous support of our RMSST family. We encourage parents to participate in various events! We look forward to your support and participation!
     </div>
@@ -131,17 +131,21 @@
 
 </div>
 
-<div class=" hexagon-mask-image w-screen ring-1 ring-black flex justify-center">
-    <img class=" w-full drop-shadow-md h-full border-8 rounded-xl object-cover" src="./static/images/monsterash.jpg" alt="">
-</div>
-<div class="text-sm italic text-center p-2 mx-4">Students lining up to run our annual <span class="underline bold">Monster Dash</span> race!</div> <!--CAPTION-->
 
-<div id="mainbody" class="drop-shadow-xl flex flex-col w-full items-center justify-center h-[80dvh] gap-16 md:flex-col-reverse"><!--MAIN BODY--> 
+<div class="drop-shadow-lg md:w-[65vw] flex justify-center">
+    <div class="hexagon-mask-image">
+        <img class=" rounded-xl object-cover" src="./static/images/FallBall2019.jpg" alt="">
+    </div>
+</div>
+
+<div class="text-sm italic text-center p-2 mx-4 md:text-base ">Students at our annual <span class="underline bold">Fall Ball</span> having a great time!</div> <!--CAPTION-->
+
+<div id="mainbody" class="drop-shadow-xl flex flex-col w-full items-center justify-center h-[80dvh] gap-16 lg:flex-col-reverse"><!--MAIN BODY--> 
     <div class="flex gap-8 items-center flex-col text-sm w-3/4 justify-center "> <!--left text section-->
         <div class="text-2xl font-medium text-nowrap">What Does The Fund Provide?
         </div>
-        <span class="font-normal justify-center text-xs italic">we're glad you asked! <span class="not-italic">	&#128513;</span></span>
-        <div class="text-md  text-center">
+        <span class="font-normal justify-center text-xs italic md:text-sm ">we're glad you asked! <span class="not-italic">	&#128513;</span></span>
+        <div class="text-md  text-center md:text-lg md:w-3/4">
             <ul class="">
                 <li>
                     <span class="font-bold ">- Research Funds</span> for all students to allow students more freedoms to create meaningful research and not stress over financial restraints.
@@ -160,33 +164,40 @@
     </div> 
 </div>
 
-<div class=" hexagon-mask-image drop-shadow-lg flex justify-center">
-    <img class=" w-full h-full  drop-shadow-md rounded-xl object-cover" src="./static/images/student.JPEG" alt="">
+<div class="drop-shadow-lg md:w-[65vw] flex justify-center">
+    <div class="hexagon-mask-image">
+        <img class=" rounded-xl object-cover" src="./static/images/student.JPEG" alt="">
+    </div>
 </div>
-<div class="text-sm italic text-center p-2">Class of 2024 student, Jessica Rhee, competed at ISEF in Dallas, Texas! This once-in-a-lifetime experience was greaty supported by the fund.</div> <!--CAPTION-->
+
+    
+<div class="text-sm italic text-center p-2 md:w-1/2 md:text-base">Class of 2024 student, Jessica Rhee, competed at ISEF in Dallas, Texas! This once-in-a-lifetime experience was greaty supported by the fund.</div> <!--CAPTION-->
  
     <div class="flex justify-center gap-8 items-center flex-col text-sm drop-shadow-xl w-full h-[100dvh]"> <!--left text section-->
 
-        <div class="text-center text-lg font-medium ">Starting to see the difference we make?
+        <div class="text-center text-lg font-medium md:text-xl">Starting to see the difference we make?
         </div>
-        <div class="text-xl font-medium text-nowrap">Ready To Support The Fund?
+        <div class="text-xl font-medium text-nowrap md:text-xl">Ready To Support The Fund?
         </div>
 
         <div class="flex flex-col "> <!--button section-->
             <a href="example.com" target="_blank">
             
-                <div class=" text-center text-base ring-black drop-shadow-md ring-1 rounded-xl bg-color-button cursor-pointer p-2 hover:bg-color-button-hover">Pay Annual Dues!
+                <div id="appearButton" class=" text-center text-base drop-shadow-md rounded-lg bg-color-button transition-all duration-100 cursor-pointer px-4 py-2 hover:bg-color-button-hover md:text-xl">Pay Annual Dues!
                 </div>
 
+                            
+            </a> <!--button-->
             </a> <!--button-->    
+            
         </div> 
 
 </div>
-<div class="h-10 mx-auto text-wrap p-4 ">Made with ❤️ by <a class="text-blue-600 underline"href="https://noahbuchanan.me" target="_blank">Noah Buchanan</a></div>
+<div class=" mx-auto text-wrap">Made with ❤️ by <a class="text-blue-600 underline"href="https://noahbuchanan.me" target="_blank">Noah Buchanan</a></div>
 
 
 </body>
-<script async
+<!-- <script async
   src="https://js.stripe.com/v3/buy-button.js">
 </script>
 
@@ -194,7 +205,7 @@
   buy-button-id="buy_btn_1PRQc2JZsEpfEsILRSJsICHN"
   publishable-key="pk_test_51PO9bAJZsEpfEsILl7G6qOYqk64Y1c85gtxFJpO7T3O7B08wj1RfZkDUPg2scBHuhoiP0L69aicYz8Mkb7eE8IUh00Ju8lFrrP"
 >
-</stripe-buy-button>
+</stripe-buy-button> -->
 </html>
 
 
