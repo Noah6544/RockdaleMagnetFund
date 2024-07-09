@@ -18,6 +18,10 @@ module.exports = {
 
       }
     },
+    fontFamily: {
+      'sans': ['Beiruti','ui-sans-serif', 'system-ui'],
+
+    }
   },
   plugins: [],
 }

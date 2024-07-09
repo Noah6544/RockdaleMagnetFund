@@ -1,3 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    h1 { /* heading size */
+      @apply text-3xl;
+      @apply md:text-4xl;
+      @apply lg:text-6xl;
+    }
+    h2 { /* paragraph size */
+      @apply text-xl;
+      @apply md:text-2xl;
+      @apply text-left;
+    }
+    h3 { /*button size*/
+        @apply text-lg;
+        @apply md:text-xl;
+    }
+    h4 { /* caption size */
+        @apply text-lg;
+        @apply md:text-xl;
+        @apply italic;
+        /* @apply w-3/4;  this wont work for caption */
+    }
+}
