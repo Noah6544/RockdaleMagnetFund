@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="output.css" rel="stylesheet">
+    <script src="./static/javascript/script.js" defer></script>
+    <title>RMSST Fund: Contact</title>
+</head>
+
+<body class="bg-color-body flex flex-col items-center justify-center">
+
+<div class="fixed top-0 right-0 z-50 m-8 p-1" id="menu">
+
+    <i class="rounded-full block w-8 h-[4px] bg-color-menu"></i>
+
+    <i class="translate-y-1 rounded-full block w-8 h-[4px] bg-color-menu"></i>
+    <i class=" translate-y-2 rounded-full block w-8 h-[4px] bg-color-menu"></i>
+
+</div>  
+
+<div id="mobileNavbar" class="fixed opacity-0 pointer-events-none top-0 items-center justify-center z-40 transition-all ease-in duration-200 "><!--mobile navbar-->
+
+    <div class="flex flex-col h-screen w-screen justify-evenly bg-color-dropdown-navbar z-10 drop-shadow-lg delay-75"> 
+
+        <div class="w-screen h-screen  opacity-20 py-3 gap-3 absolute flex top-0 left-0 text-md justify-center blur-sm items-center">
+            <img class="drop-shadow min-w-12 w-[100vw] max-w-96"src="./static/images/RMSST Square.png" alt="">            
+        </div>
+
+        <div class="flex flex-col justify-center items-center gap-8 text-lg drop-shadow-md ">
+            <a href="./about.html" class="hover:text-color-button"><div class="">About</div></a>
+            <a href="./contact.html" class="hover:text-color-button"><div class="">Contact</div></a>
+            <a href="./fundraising.html" class="hover:text-color-button"><div class="">Fundraising</div></a>
+            <a href="./html" class="hover:text-color-button"><div class="">Annual Dues</div></a>
+            <a href="./donations.html" class="hover:text-color-button"><div class="">Donations</div></a>
+            <a href="index.html" class="hover:text-color-button"><div>Home</div></a>
+
+        </div>
+    </div>   
+
+
+</div>  
+  
+<div class="flex items-center justify-center center"><!--desktop navbar-->
+
+    <div class="hidden md:flex md:absolute md:top-0 left-0 w-screen justify-evenly  bg-color-navbar z-10 drop-shadow-lg h-16 opacity-100"> 
+        <div class="flex text-md ">
+            <div class="img">Logo</div>
+            <div class="">Rockdale Magnet Fund</div> 
+        </div>
+        <div class="flex text-sm">
+            <div class="">Home</div>
+            <div class="">About</div>
+            <div class="">Fundraising</div>
+            <div class="">Contact</div>
+            <div class="">Annual Dues</div>
+            <div class="">Check Out</div>
+        </div>
+    </div>   
+
+
+</div>  
+
+
+<div id="mainbody" class="h-[50dvh] drop-shadow-sm flex flex-col w-100% items-center justify-center  gap-16 md:flex-col-reverse"><!--MAIN BODY--> 
+    <div class=""> <!--right image section-->
+        <img class=" drop-shadow min-w-40 w-[60vw] max-w-52"src="./static/images/MagnetGold.png" alt="">
+    </div> <!--IMAGE-->
+
+
+     
+</div>
+
+
+<div class="flex gap-8 items-center flex-col items-centere text-sm w-3/4"> <!--left text section-->
+
+       
+    <div class="text-xl font-medium text-nowrap">Contact </div>
+    <div class="text-center text-base">Questions, Comments, Concerns? Please reach out, we're here to help!</div>
+    <div class="flex flex-col gap-10 justify-around item"> <!--button section-->
+        <div class="flex items-center text-center text-base h-24 ring-black drop-shadow-md ring-1 rounded-lg  bg-color-button cursor-pointer px-4 py-2 hover:bg-color-button-hover">Address: <br>930 Rowland Road, Conyers, GA 30012</div>
+        <a href="mailto:info@rockdalemagnefund.com"><div class="flex text-center text-base ring-black drop-shadow-md ring-1 rounded-lg  bg-color-button cursor-pointer items-center px-4 py-2 hover:bg-color-button-hover align-middle h-24">Email: info@rockdalemagnetfund.com</div></a>
+
+        <div class="text-base text-center ring-1 ring-black drop-shadow-md rounded-lg bg-color-button cursor-pointer hover:bg-color-button-hover flex justify-center px-0 py-1 items-center h-24">Phone: 770-483-8737<br></div> <!--button--> 
+    </div>
+
+</div> 
+
+<div class="h-0 w-0 overflow-hidden"> <!--hexagon-->
+
+  <div class="absolute pointer-events-none blur-sm drop-shadow-lg top-[-35px] left-[-150px] rotate-[26deg] scale-125">
+    <svg xmlns="http://www.w3.org/2000/svg" width="256px" height="256px" viewBox="0 0 24.00 24.00" fill="none">
+        <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke='#0C71C3'stroke-width="0.1" stroke-linejoin="miter"/>
+        </svg>  
+    </div>
+</div>
+
+<div class="hidden pointer-events-none blur-sm drop-shadow-lg bottom-[-35px] right-[-150px] rotate-[75deg] scale-125"> <!--hexagon-->
+    
+    <svg xmlns="http://www.w3.org/2000/svg" width="256px" height="256px" viewBox="0 0 24.00 24.00" fill="none">
+        <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke="#ff0000" stroke-width="0.1" stroke-linejoin="miter"/>
+    </svg>  </div>
+
+        
+</div>
+
+
+    <div class="flex justify-center gap-10 h-100% items-center flex-col text-sm drop-shadow-xl w-100% h-[100dvh] "> <!--left text section-->
+
+        <div class="text-2xl font-medium text-nowrap">Ready To Support The Fund?
+        </div>
+
+        <div class="flex flex-col "> <!--button section-->
+            <a href="example.com" target="_blank">
+            
+                <div class=" text-center text-lg ring-black drop-shadow-md ring-1 rounded-xl bg-color-button cursor-pointer px-4 py-2 hover:bg-color-button-hover">Pay Annual Dues!
+                </div>
+
+            </a> <!--button-->    
+        </div> 
+
+</div>
+<div class=" bottom-0 mx-auto px-2">Made with ❤️ by <a class="text-blue-600 underline"href="https://noahbuchanan.me" target="_blank">Noah Buchanan</a></div>
+
+
+</body>
+
+</html>
