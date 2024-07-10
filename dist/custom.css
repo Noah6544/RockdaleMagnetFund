@@ -87,3 +87,20 @@
   transform: translateY(-100%);
   animation: slideDown 3s 3s forwards cubic-bezier(.1,-0.01,0,.97);
 }
+
+  a:link#credit {
+    color: color-button;
+  }
+
+  a:visited#credit {
+    color: color-button;
+  }
+
+  a:hover#credit {
+    color: color-button;
+  }
+
+  a:active#credit {
+    color: color-button;
+  }
+

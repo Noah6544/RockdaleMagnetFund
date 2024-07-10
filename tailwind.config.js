@@ -8,7 +8,7 @@ module.exports = {
       },
       colors:{
         'color-dropdown-navbar': 'hsla(218, 31%, 950%, 1)',
-        'color-navbar': 'hsla(218, 60%, 100%, 1)',
+        'color-navbar': 'hsla(218, 50%, 100%, 1)',
         'color-body': 'hsla(218, 31%, 95%, 0.91)',
         'color-button': '#7EAAFF',
         'color-button-hover': '#6699ff',
