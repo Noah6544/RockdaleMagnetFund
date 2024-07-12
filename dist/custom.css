@@ -50,9 +50,14 @@
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     fill: black;
+    aspect-ratio: 1/1;
     
 }
 
+.hexagon-mask-image img{
+  aspect-ratio: 1/1; /*allows images that aren't 1/1 to be 1/1 */
+
+}
 #landingPage { 
     animation: 1s body-fade-in;
 }
@@ -85,7 +90,7 @@
 
 #desktopNavbar {
   transform: translateY(-100%);
-  animation: slideDown 3s 3s forwards cubic-bezier(.1,-0.01,0,.97);
+  animation: slideDown 5s forwards cubic-bezier(.13,.61,.24,1.06);
 }
 
   a:link#credit {
@@ -104,3 +109,12 @@
     color: color-button;
   }
 
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 48
+}

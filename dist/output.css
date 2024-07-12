@@ -674,6 +674,10 @@ h4{
   top: -35px;
 }
 
+.top-\[50\%\]{
+  top: 50%;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -699,6 +703,14 @@ h4{
   margin-right: auto;
 }
 
+.mb-20{
+  margin-bottom: 5rem;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
+}
+
 .block{
   display: block;
 }
@@ -709,6 +721,10 @@ h4{
 
 .hidden{
   display: none;
+}
+
+.aspect-square{
+  aspect-ratio: 1 / 1;
 }
 
 .h-0{
@@ -753,6 +769,14 @@ h4{
 
 .h-screen{
   height: 100vh;
+}
+
+.h-\[2px\]{
+  height: 2px;
+}
+
+.h-\[px\]{
+  height: px;
 }
 
 .min-h-10{
@@ -904,6 +928,10 @@ h4{
   align-items: center;
 }
 
+.justify-start{
+  justify-content: flex-start;
+}
+
 .justify-center{
   justify-content: center;
 }
@@ -1020,24 +1048,16 @@ h4{
   padding: 0.25rem;
 }
 
+.p-12{
+  padding: 3rem;
+}
+
 .p-2{
   padding: 0.5rem;
 }
 
-.p-32{
-  padding: 8rem;
-}
-
 .p-4{
   padding: 1rem;
-}
-
-.p-8{
-  padding: 2rem;
-}
-
-.p-12{
-  padding: 3rem;
 }
 
 .px-0{
@@ -1075,16 +1095,16 @@ h4{
   padding-bottom: 0.75rem;
 }
 
+.pb-20{
+  padding-bottom: 5rem;
+}
+
 .pr-8{
   padding-right: 2rem;
 }
 
-.pb-24{
-  padding-bottom: 6rem;
-}
-
-.pb-20{
-  padding-bottom: 5rem;
+.text-left{
+  text-align: left;
 }
 
 .text-center{
@@ -1148,6 +1168,11 @@ h4{
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-color-button{
+  --tw-text-opacity: 1;
+  color: rgb(126 170 255 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -1296,6 +1321,10 @@ h4{
     height: 80vw;
   }
 
+  .md\:h-\[33vw\]{
+    height: 33vw;
+  }
+
   .md\:w-3\/4{
     width: 75%;
   }
@@ -1306,6 +1335,10 @@ h4{
 
   .md\:w-\[65vw\]{
     width: 65vw;
+  }
+
+  .md\:w-full{
+    width: 100%;
   }
 
   .md\:min-w-40{
@@ -1381,6 +1414,22 @@ h4{
     height: 100%;
   }
 
+  .lg\:h-\[45vh\]{
+    height: 45vh;
+  }
+
+  .lg\:h-\[35\]{
+    height: 35;
+  }
+
+  .lg\:h-\[35vh\]{
+    height: 35vh;
+  }
+
+  .lg\:h-\[30vh\]{
+    height: 30vh;
+  }
+
   .lg\:min-h-12{
     min-height: 3rem;
   }
@@ -1411,6 +1460,10 @@ h4{
 
   .lg\:w-screen{
     width: 100vw;
+  }
+
+  .lg\:w-\[30vw\]{
+    width: 30vw;
   }
 
   .lg\:max-w-none{
