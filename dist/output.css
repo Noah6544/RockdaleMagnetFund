@@ -674,10 +674,6 @@ h4{
   top: -35px;
 }
 
-.top-\[50\%\]{
-  top: 50%;
-}
-
 .z-10{
   z-index: 10;
 }
@@ -701,10 +697,6 @@ h4{
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
-}
-
-.mb-20{
-  margin-bottom: 5rem;
 }
 
 .mb-12{
@@ -735,10 +727,6 @@ h4{
   height: 4rem;
 }
 
-.h-24{
-  height: 6rem;
-}
-
 .h-\[100dvh\]{
   height: 100dvh;
 }
@@ -749,10 +737,6 @@ h4{
 
 .h-\[4px\]{
   height: 4px;
-}
-
-.h-\[50dvh\]{
-  height: 50dvh;
 }
 
 .h-\[80dvh\]{
@@ -771,12 +755,28 @@ h4{
   height: 100vh;
 }
 
-.h-\[2px\]{
-  height: 2px;
+.h-\[120dvh\]{
+  height: 120dvh;
 }
 
-.h-\[px\]{
-  height: px;
+.h-\[150dvh\]{
+  height: 150dvh;
+}
+
+.h-\[1000dvh\]{
+  height: 1000dvh;
+}
+
+.h-\[75dvh\]{
+  height: 75dvh;
+}
+
+.h-\[50dvh\]{
+  height: 50dvh;
+}
+
+.h-\[60dvh\]{
+  height: 60dvh;
 }
 
 .min-h-10{
@@ -928,10 +928,6 @@ h4{
   align-items: center;
 }
 
-.justify-start{
-  justify-content: flex-start;
-}
-
 .justify-center{
   justify-content: center;
 }
@@ -996,10 +992,6 @@ h4{
   border-radius: 9999px;
 }
 
-.rounded-lg{
-  border-radius: 0.5rem;
-}
-
 .rounded-md{
   border-radius: 0.375rem;
 }
@@ -1015,11 +1007,6 @@ h4{
 .bg-color-button{
   --tw-bg-opacity: 1;
   background-color: rgb(126 170 255 / var(--tw-bg-opacity));
-}
-
-.bg-color-button-hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(102 153 255 / var(--tw-bg-opacity));
 }
 
 .bg-color-dropdown-navbar{
@@ -1060,11 +1047,6 @@ h4{
   padding: 1rem;
 }
 
-.px-0{
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
 .px-16{
   padding-left: 4rem;
   padding-right: 4rem;
@@ -1073,21 +1055,6 @@ h4{
 .px-2{
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-}
-
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.py-1{
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-.py-2{
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .py-3{
@@ -1103,21 +1070,8 @@ h4{
   padding-right: 2rem;
 }
 
-.text-left{
-  text-align: left;
-}
-
 .text-center{
   text-align: center;
-}
-
-.align-middle{
-  vertical-align: middle;
-}
-
-.text-2xl{
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .text-base{
@@ -1148,16 +1102,16 @@ h4{
   font-weight: 500;
 }
 
-.font-normal{
-  font-weight: 400;
+.font-semibold{
+  font-weight: 600;
+}
+
+.font-thin{
+  font-weight: 100;
 }
 
 .italic{
   font-style: italic;
-}
-
-.not-italic{
-  font-style: normal;
 }
 
 .text-blue-600{
@@ -1165,14 +1119,14 @@ h4{
   color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-color-button{
   --tw-text-opacity: 1;
   color: rgb(126 170 255 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -1321,10 +1275,6 @@ h4{
     height: 80vw;
   }
 
-  .md\:h-\[33vw\]{
-    height: 33vw;
-  }
-
   .md\:w-3\/4{
     width: 75%;
   }
@@ -1414,20 +1364,12 @@ h4{
     height: 100%;
   }
 
-  .lg\:h-\[45vh\]{
-    height: 45vh;
+  .lg\:h-auto{
+    height: auto;
   }
 
-  .lg\:h-\[35\]{
-    height: 35;
-  }
-
-  .lg\:h-\[35vh\]{
-    height: 35vh;
-  }
-
-  .lg\:h-\[30vh\]{
-    height: 30vh;
+  .lg\:h-\[75dvh\]{
+    height: 75dvh;
   }
 
   .lg\:min-h-12{
@@ -1446,6 +1388,10 @@ h4{
     width: 25vw;
   }
 
+  .lg\:w-\[30vw\]{
+    width: 30vw;
+  }
+
   .lg\:w-\[35vw\]{
     width: 35vw;
   }
@@ -1462,8 +1408,8 @@ h4{
     width: 100vw;
   }
 
-  .lg\:w-\[30vw\]{
-    width: 30vw;
+  .lg\:w-1\/2{
+    width: 50%;
   }
 
   .lg\:max-w-none{
