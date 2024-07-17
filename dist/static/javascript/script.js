@@ -59,5 +59,25 @@ menu.addEventListener("click", function(){
   }
 });
 
-
 onScrollItems.forEach(element => CheckItemInView.observe(element));
+
+//Selective Page Scripts
+let currentPage = (((window.location.pathname).split('/'))).pop()
+
+if (currentPage == 'indeasdx.html' || !currentPage || currentPage == ""){
+  galleryWrapper = document.getElementsByClassName("gallerySnippetContainerWrapper")[0];
+  subdiv = galleryWrapper.children;
+  // print(subdiv) LOL THE PRINT FUNCTION LITERALLY PRINTS THE PAGE I WAS SO CONFUSED LOL
+  Array(galleryWrapper).forEach(element => {
+    element.style.cssText = 'pointer-events: none;';
+    element.forEach(child => {
+      child.style.cssText = 'pointer-events: none;';
+  });
+});
+  console.log(galleryWrapper)
+  galleryWrapper.addEventListener("mousedown", function(){
+    console.log("clicked")
+  });
+  
+
+}

@@ -90,7 +90,7 @@
 
 #desktopNavbar {
   transform: translateY(-100%);
-  animation: slideDown 5s forwards cubic-bezier(.13,.61,.24,1.06);
+  animation: slideDown 1s forwards cubic-bezier(.13,.61,.24,1.06);
 }
 
   a:link#credit {
@@ -117,4 +117,12 @@
   'wght' 500,
   'GRAD' 0,
   'opsz' 48
+}
+
+.gallerySnippetContainerWrapper {
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 0) , rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.gallerySnippetContainer {
+  min-width: min-content;
 }
