@@ -64,20 +64,58 @@ onScrollItems.forEach(element => CheckItemInView.observe(element));
 //Selective Page Scripts
 let currentPage = (((window.location.pathname).split('/'))).pop()
 
-if (currentPage == 'indeasdx.html' || !currentPage || currentPage == ""){
-  galleryWrapper = document.getElementsByClassName("gallerySnippetContainerWrapper")[0];
-  subdiv = galleryWrapper.children;
-  // print(subdiv) LOL THE PRINT FUNCTION LITERALLY PRINTS THE PAGE I WAS SO CONFUSED LOL
-  Array(galleryWrapper).forEach(element => {
-    element.style.cssText = 'pointer-events: none;';
-    element.forEach(child => {
-      child.style.cssText = 'pointer-events: none;';
-  });
+if (currentPage == 'index.html' || !currentPage ||  currentPage == ""){
+  galleryWrapper = document.getElementsByClassName("gallerySnippetContainer")[0];
+  var isMouseDown = false;
+  var initialMouse = 0;
+  var lastMovementPercentage = 0;
+
+  galleryWrapper.addEventListener("mousedown", function(event){
+    initialMouse = event.screenX;
+    isMouseDown = true;
+    galleryWrapper.style.cursor = "grab";
 });
-  console.log(galleryWrapper)
-  galleryWrapper.addEventListener("mousedown", function(){
-    console.log("clicked")
+
+  window.addEventListener("mouseup", function(event){
+    isMouseDown = false;
+    lastMovementPercentage = nextMovementPercentage;
+    initialMouse = event.screenX;
+    galleryWrapper.style.cursor = "";
+    console.log("Mouse Up");
+
   });
+  galleryWrapper.addEventListener("mousemove", function(event){
+
+    if (!isMouseDown) return;
+
+    const mouseX = initialMouse - event.screenX;
+    const galleryWidth = galleryWrapper.offsetWidth/1.4;
+    movementPercentage = (mouseX) / galleryWidth * -100;
+    nextMovementPercentage = movementPercentage + lastMovementPercentage;
+
+    // if (nextMovementPercentage > 1) {
+    //   nextMovementPercentage = 1;
+    // }
+    // else if (nextMovementPercentage < -55) {
+    //   nextMovementPercentage = -55;
+    // }
+    if( !((nextMovementPercentage > 1) || (nextMovementPercentage < -55))) {
+      // galleryWrapper.style.transform = `translateX(${nextMovementPercentage}%)`;
+      keyframes =[{transform:`translateX(${nextMovementPercentage}%`}];
+      console.log(nextMovementPercentage)
+
+      galleryWrapper.animate(keyframes, { duration: 1200, fill: "forwards" });
+      lastMovementPercentage = nextMovementPercentage;
+
   
+    }
+   
+
+
+
+  });
+
+  
+ 
 
 }
