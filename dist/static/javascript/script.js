@@ -30,7 +30,6 @@ function showMobileNavbarItems(show){ //DRY NOT WET
       element.classList.remove("mobileNavbarListShow"); 
       element.classList.add("mobileNavbarListHidden"); 
       delay += .05;
-      console.log(element);
     });
   }
 
@@ -89,23 +88,23 @@ if (currentPage == 'index.html' || !currentPage ||  currentPage == ""){
     if (!isMouseDown) return;
 
     const mouseX = initialMouse - event.screenX;
-    const galleryWidth = galleryWrapper.offsetWidth/1.4;
+    const galleryWidth = galleryWrapper.offsetWidth/2;
     movementPercentage = (mouseX) / galleryWidth * -100;
     nextMovementPercentage = movementPercentage + lastMovementPercentage;
+    console.log(nextMovementPercentage);
 
-    // if (nextMovementPercentage > 1) {
-    //   nextMovementPercentage = 1;
-    // }
-    // else if (nextMovementPercentage < -55) {
-    //   nextMovementPercentage = -55;
-    // }
+    if (nextMovementPercentage > 1) {
+      nextMovementPercentage = 1;
+    }
+    else if (nextMovementPercentage < -55) {
+      nextMovementPercentage = -55;
+    }
     if( !((nextMovementPercentage > 1) || (nextMovementPercentage < -55))) {
       // galleryWrapper.style.transform = `translateX(${nextMovementPercentage}%)`;
       keyframes =[{transform:`translateX(${nextMovementPercentage}%`}];
       console.log(nextMovementPercentage)
 
-      galleryWrapper.animate(keyframes, { duration: 1200, fill: "forwards" });
-      lastMovementPercentage = nextMovementPercentage;
+      galleryWrapper.animate(keyframes, { duration: 1400, fill: "forwards" });
 
   
     }
