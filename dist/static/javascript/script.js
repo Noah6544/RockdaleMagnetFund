@@ -75,12 +75,11 @@ if (currentPage == 'index.html' || !currentPage ||  currentPage == ""){
     galleryWrapper.style.cursor = "grab";
 });
 
-  window.addEventListener("mouseup", function(event){
+  window.addEventListener("mouseup", function(event){ //using window for mouseup becuase the user may leave the gallery div
     isMouseDown = false;
     lastMovementPercentage = nextMovementPercentage;
     initialMouse = event.screenX;
     galleryWrapper.style.cursor = "";
-    console.log("Mouse Up");
 
   });
   galleryWrapper.addEventListener("mousemove", function(event){
@@ -91,7 +90,6 @@ if (currentPage == 'index.html' || !currentPage ||  currentPage == ""){
     const galleryWidth = galleryWrapper.offsetWidth/2;
     movementPercentage = (mouseX) / galleryWidth * -100;
     nextMovementPercentage = movementPercentage + lastMovementPercentage;
-    console.log(nextMovementPercentage);
 
     if (nextMovementPercentage > 1) {
       nextMovementPercentage = 1;
@@ -102,7 +100,6 @@ if (currentPage == 'index.html' || !currentPage ||  currentPage == ""){
     if( !((nextMovementPercentage > 1) || (nextMovementPercentage < -55))) {
       // galleryWrapper.style.transform = `translateX(${nextMovementPercentage}%)`;
       keyframes =[{transform:`translateX(${nextMovementPercentage}%`}];
-      console.log(nextMovementPercentage)
 
       galleryWrapper.animate(keyframes, { duration: 1400, fill: "forwards" });
 
@@ -114,7 +111,9 @@ if (currentPage == 'index.html' || !currentPage ||  currentPage == ""){
 
   });
 
-  
+  galleryWrapper.addEventListener("touchmove", function(event){
+    console.log("Scrolling")
+  });
  
 
 }

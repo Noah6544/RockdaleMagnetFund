@@ -799,6 +799,30 @@ h4{
   width: 100vw;
 }
 
+.w-\[50vw\]{
+  width: 50vw;
+}
+
+.w-\[20vw\]{
+  width: 20vw;
+}
+
+.w-\[76vw\]{
+  width: 76vw;
+}
+
+.w-\[60vw\]{
+  width: 60vw;
+}
+
+.w-\[80vw\]{
+  width: 80vw;
+}
+
+.w-\[70vw\]{
+  width: 70vw;
+}
+
 .min-w-12{
   min-width: 3rem;
 }
@@ -947,6 +971,14 @@ h4{
   gap: 2rem;
 }
 
+.gap-2{
+  gap: 0.5rem;
+}
+
+.gap-1{
+  gap: 0.25rem;
+}
+
 .self-center{
   align-self: center;
 }
@@ -1024,10 +1056,6 @@ h4{
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.pb-20{
-  padding-bottom: 5rem;
 }
 
 .pr-8{
@@ -1324,6 +1352,11 @@ h4{
     width: 100vw;
   }
 
+  .lg\:min-w-\[min-content\]{
+    min-width: -moz-min-content;
+    min-width: min-content;
+  }
+
   .lg\:max-w-none{
     max-width: none;
   }
@@ -1385,6 +1418,10 @@ h4{
 
   .lg\:gap-28{
     gap: 7rem;
+  }
+
+  .lg\:gap-8{
+    gap: 2rem;
   }
 
   .lg\:px-16{
