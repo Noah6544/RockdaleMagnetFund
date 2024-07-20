@@ -747,6 +747,22 @@ h4{
   height: 100vh;
 }
 
+.h-dvh{
+  height: 100dvh;
+}
+
+.h-\[50vw\]{
+  height: 50vw;
+}
+
+.h-1\/2{
+  height: 50%;
+}
+
+.h-\[50dvh\]{
+  height: 50dvh;
+}
+
 .min-h-10{
   min-height: 2.5rem;
 }
@@ -787,6 +803,14 @@ h4{
   width: 40vw;
 }
 
+.w-\[50vw\]{
+  width: 50vw;
+}
+
+.w-\[80vw\]{
+  width: 80vw;
+}
+
 .w-auto{
   width: auto;
 }
@@ -799,28 +823,16 @@ h4{
   width: 100vw;
 }
 
-.w-\[50vw\]{
-  width: 50vw;
-}
-
 .w-\[20vw\]{
   width: 20vw;
 }
 
-.w-\[76vw\]{
-  width: 76vw;
+.w-\[2vw\]{
+  width: 2vw;
 }
 
-.w-\[60vw\]{
-  width: 60vw;
-}
-
-.w-\[80vw\]{
-  width: 80vw;
-}
-
-.w-\[70vw\]{
-  width: 70vw;
+.w-\[25vw\]{
+  width: 25vw;
 }
 
 .min-w-12{
@@ -849,6 +861,18 @@ h4{
   min-width: max-content;
 }
 
+.min-w-16{
+  min-width: 4rem;
+}
+
+.min-w-20{
+  min-width: 5rem;
+}
+
+.min-w-24{
+  min-width: 6rem;
+}
+
 .max-w-44{
   max-width: 11rem;
 }
@@ -859,6 +883,10 @@ h4{
 
 .max-w-sm{
   max-width: 24rem;
+}
+
+.max-w-32{
+  max-width: 8rem;
 }
 
 .shrink{
@@ -951,6 +979,10 @@ h4{
   justify-content: space-evenly;
 }
 
+.gap-1{
+  gap: 0.25rem;
+}
+
 .gap-16{
   gap: 4rem;
 }
@@ -973,10 +1005,6 @@ h4{
 
 .gap-2{
   gap: 0.5rem;
-}
-
-.gap-1{
-  gap: 0.25rem;
 }
 
 .self-center{
@@ -1032,6 +1060,11 @@ h4{
   background-color: hsla(218, 50%, 100%, 1);
 }
 
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -1053,6 +1086,10 @@ h4{
   padding: 1rem;
 }
 
+.p-6{
+  padding: 1.5rem;
+}
+
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1060,6 +1097,14 @@ h4{
 
 .pr-8{
   padding-right: 2rem;
+}
+
+.pb-16{
+  padding-bottom: 4rem;
+}
+
+.pb-12{
+  padding-bottom: 3rem;
 }
 
 .text-center{
@@ -1219,6 +1264,10 @@ h4{
     height: 80vw;
   }
 
+  .md\:h-\[50vw\]{
+    height: 50vw;
+  }
+
   .md\:w-3\/4{
     width: 75%;
   }
@@ -1239,12 +1288,28 @@ h4{
     width: 100%;
   }
 
+  .md\:w-\[40vw\]{
+    width: 40vw;
+  }
+
+  .md\:w-\[50vw\]{
+    width: 50vw;
+  }
+
   .md\:min-w-40{
     min-width: 10rem;
   }
 
   .md\:gap-12{
     gap: 3rem;
+  }
+
+  .md\:gap-4{
+    gap: 1rem;
+  }
+
+  .md\:p-12{
+    padding: 3rem;
   }
 
   .md\:hover\:px-4:hover{
@@ -1352,11 +1417,6 @@ h4{
     width: 100vw;
   }
 
-  .lg\:min-w-\[min-content\]{
-    min-width: -moz-min-content;
-    min-width: min-content;
-  }
-
   .lg\:max-w-none{
     max-width: none;
   }
@@ -1424,6 +1484,10 @@ h4{
     gap: 2rem;
   }
 
+  .lg\:p-12{
+    padding: 3rem;
+  }
+
   .lg\:px-16{
     padding-left: 4rem;
     padding-right: 4rem;
@@ -1446,5 +1510,10 @@ h4{
   .lg\:hover\:px-\[45px\]:hover{
     padding-left: 45px;
     padding-right: 45px;
+  }
+
+  .lg\:hover\:px-\[450px\]:hover{
+    padding-left: 450px;
+    padding-right: 450px;
   }
 }

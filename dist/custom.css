@@ -1,9 +1,9 @@
 @keyframes body-fade-in {
-  from {
+  0% {
       opacity: 0;
       transform: translateY(-10px);
   }
- to {
+ 100% {
       opacity: 1;
       transform: translateY(0px);
  }
@@ -19,22 +19,23 @@
 }
 
 @keyframes onScrollView {
-  from {
+  0% {
     opacity: 0;
+    -webkit-opacity: 0;
   }
-  to{
+  100% {
     opacity: 1;
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
 
   }
   
 }
 
 @keyframes slideDown{
-  from{
+  0%{
     transform: translateY(-100%);
   }
-  to{
+  100% {
     transform: translateY(0%);
   }
 }
@@ -64,10 +65,12 @@
 .onScrollHidden{
   opacity: 0;
   transform: translateX(-5px);
+  -webkit-transform: translateX(-5px);
 }
 
 .onScrollView{
   animation: onScrollView 1s .2s forwards;
+  -webkit-animation: onScrollView 1s .2s forwards;
 }
 
 .mobileNavbarListHidden{
@@ -125,4 +128,8 @@
 
 .gallerySnippetContainer {
   min-width: min-content;
+}
+
+.loading {
+  display: none;
 }

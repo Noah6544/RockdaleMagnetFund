@@ -68,25 +68,28 @@ if (currentPage == 'index.html' || !currentPage ||  currentPage == ""){
   var isMouseDown = false;
   var initialMouse = 0;
   var lastMovementPercentage = 0;
+  var nextMovementPercentage = 0;
 
-  galleryWrapper.addEventListener("mousedown", function(event){
-    initialMouse = event.screenX;
+  galleryWrapper.addEventListener("touchstart", function(event){
+    
+    initialMouse = event.touches[0].screenX;
     isMouseDown = true;
     galleryWrapper.style.cursor = "grab";
+    console.log("start")
 });
 
-  window.addEventListener("mouseup", function(event){ //using window for mouseup becuase the user may leave the gallery div
-    isMouseDown = false;
+  window.addEventListener("touchend", function(event){ //using window for mouseup becuase the user may leave the gallery div
+    // isMouseDown = false;
     lastMovementPercentage = nextMovementPercentage;
-    initialMouse = event.screenX;
+    initialMouse = event.touches[0].screenX;
     galleryWrapper.style.cursor = "";
+    console.log("end")
 
   });
-  galleryWrapper.addEventListener("mousemove", function(event){
-
-    if (!isMouseDown) return;
-
-    const mouseX = initialMouse - event.screenX;
+  galleryWrapper.addEventListener("touchmove", function(event){
+    // if (!isMouseDown) return;
+    console.log(event.touches[0].screenX);
+    const mouseX = initialMouse - event.touches[0].screenX;
     const galleryWidth = galleryWrapper.offsetWidth/2;
     movementPercentage = (mouseX) / galleryWidth * -100;
     nextMovementPercentage = movementPercentage + lastMovementPercentage;
@@ -105,15 +108,7 @@ if (currentPage == 'index.html' || !currentPage ||  currentPage == ""){
 
   
     }
-   
-
-
-
   });
 
-  galleryWrapper.addEventListener("touchmove", function(event){
-    console.log("Scrolling")
-  });
- 
 
 }
