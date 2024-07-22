@@ -747,22 +747,6 @@ h4{
   height: 100vh;
 }
 
-.h-dvh{
-  height: 100dvh;
-}
-
-.h-\[50vw\]{
-  height: 50vw;
-}
-
-.h-1\/2{
-  height: 50%;
-}
-
-.h-\[50dvh\]{
-  height: 50dvh;
-}
-
 .min-h-10{
   min-height: 2.5rem;
 }
@@ -803,8 +787,8 @@ h4{
   width: 40vw;
 }
 
-.w-\[50vw\]{
-  width: 50vw;
+.w-\[70vw\]{
+  width: 70vw;
 }
 
 .w-\[80vw\]{
@@ -823,20 +807,12 @@ h4{
   width: 100vw;
 }
 
-.w-\[20vw\]{
-  width: 20vw;
-}
-
-.w-\[2vw\]{
-  width: 2vw;
-}
-
-.w-\[25vw\]{
-  width: 25vw;
-}
-
 .min-w-12{
   min-width: 3rem;
+}
+
+.min-w-24{
+  min-width: 6rem;
 }
 
 .min-w-28{
@@ -861,16 +837,8 @@ h4{
   min-width: max-content;
 }
 
-.min-w-16{
-  min-width: 4rem;
-}
-
-.min-w-20{
-  min-width: 5rem;
-}
-
-.min-w-24{
-  min-width: 6rem;
+.max-w-32{
+  max-width: 8rem;
 }
 
 .max-w-44{
@@ -883,10 +851,6 @@ h4{
 
 .max-w-sm{
   max-width: 24rem;
-}
-
-.max-w-32{
-  max-width: 8rem;
 }
 
 .shrink{
@@ -979,12 +943,12 @@ h4{
   justify-content: space-evenly;
 }
 
-.gap-1{
-  gap: 0.25rem;
-}
-
 .gap-16{
   gap: 4rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
 }
 
 .gap-20{
@@ -1001,10 +965,6 @@ h4{
 
 .gap-8{
   gap: 2rem;
-}
-
-.gap-2{
-  gap: 0.5rem;
 }
 
 .self-center{
@@ -1039,6 +999,11 @@ h4{
   border-radius: 0.75rem;
 }
 
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-color-body{
   background-color: hsla(218, 31%, 95%, 0.91);
 }
@@ -1060,11 +1025,6 @@ h4{
   background-color: hsla(218, 50%, 100%, 1);
 }
 
-.bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
@@ -1072,10 +1032,6 @@ h4{
 
 .p-1{
   padding: 0.25rem;
-}
-
-.p-12{
-  padding: 3rem;
 }
 
 .p-2{
@@ -1086,10 +1042,6 @@ h4{
   padding: 1rem;
 }
 
-.p-6{
-  padding: 1.5rem;
-}
-
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1097,14 +1049,6 @@ h4{
 
 .pr-8{
   padding-right: 2rem;
-}
-
-.pb-16{
-  padding-bottom: 4rem;
-}
-
-.pb-12{
-  padding-bottom: 3rem;
 }
 
 .text-center{
@@ -1264,16 +1208,12 @@ h4{
     height: 80vw;
   }
 
-  .md\:h-\[50vw\]{
-    height: 50vw;
-  }
-
   .md\:w-3\/4{
     width: 75%;
   }
 
-  .md\:w-\[33vw\]{
-    width: 33vw;
+  .md\:w-\[40vw\]{
+    width: 40vw;
   }
 
   .md\:w-\[65vw\]{
@@ -1288,14 +1228,6 @@ h4{
     width: 100%;
   }
 
-  .md\:w-\[40vw\]{
-    width: 40vw;
-  }
-
-  .md\:w-\[50vw\]{
-    width: 50vw;
-  }
-
   .md\:min-w-40{
     min-width: 10rem;
   }
@@ -1308,8 +1240,8 @@ h4{
     gap: 1rem;
   }
 
-  .md\:p-12{
-    padding: 3rem;
+  .md\:overflow-auto{
+    overflow: auto;
   }
 
   .md\:hover\:px-4:hover{
@@ -1343,6 +1275,14 @@ h4{
 
   .lg\:right-\[0px\]{
     right: 0px;
+  }
+
+  .lg\:right-\[20vw\]{
+    right: 20vw;
+  }
+
+  .lg\:top-\[10vw\]{
+    top: 10vw;
   }
 
   .lg\:top-\[180px\]{
@@ -1426,6 +1366,11 @@ h4{
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .lg\:rotate-\[40deg\]{
+    --tw-rotate: 40deg;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .lg\:scale-\[\.8\]{
     --tw-scale-x: .8;
     --tw-scale-y: .8;
@@ -1435,6 +1380,12 @@ h4{
   .lg\:scale-\[1\.2\]{
     --tw-scale-x: 1.2;
     --tw-scale-y: 1.2;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:scale-\[2\.5\]{
+    --tw-scale-x: 2.5;
+    --tw-scale-y: 2.5;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -1484,8 +1435,8 @@ h4{
     gap: 2rem;
   }
 
-  .lg\:p-12{
-    padding: 3rem;
+  .lg\:overflow-hidden{
+    overflow: hidden;
   }
 
   .lg\:px-16{
@@ -1510,10 +1461,5 @@ h4{
   .lg\:hover\:px-\[45px\]:hover{
     padding-left: 45px;
     padding-right: 45px;
-  }
-
-  .lg\:hover\:px-\[450px\]:hover{
-    padding-left: 450px;
-    padding-right: 450px;
   }
 }

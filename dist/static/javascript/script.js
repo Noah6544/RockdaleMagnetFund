@@ -70,45 +70,90 @@ if (currentPage == 'index.html' || !currentPage ||  currentPage == ""){
   var lastMovementPercentage = 0;
   var nextMovementPercentage = 0;
 
-  galleryWrapper.addEventListener("touchstart", function(event){
+
+
+  if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {    // Code to execute if user is on a mobile screen
+  
+    galleryWrapper.addEventListener("touchstart", function(event){
+      initialMouse = event.touches[0].screenX;
+      isMouseDown = true;
+      galleryWrapper.style.cursor = "grab";
+      console.log("start")
+    });
+
+    window.addEventListener("touchend", function(event){ //using window for mouseup becuase the user may leave the gallery div
+      isMouseDown = false;
+      lastMovementPercentage = nextMovementPercentage;
+      galleryWrapper.style.cursor = "";
+    });
+
+    galleryWrapper.addEventListener("touchmove", function(event){
+      console.log(nextMovementPercentage);
+      if (!isMouseDown) return;
+      const mouseX = initialMouse - event.touches[0].screenX;
+      const galleryWidth = galleryWrapper.offsetWidth/2;
+      movementPercentage = (mouseX) / galleryWidth * -100;
+      nextMovementPercentage = movementPercentage + lastMovementPercentage;
+
+      if (nextMovementPercentage > 0) {
+        nextMovementPercentage = 0;
+      }
+      else if (nextMovementPercentage < -81) {
+        nextMovementPercentage = -81;
+      }
+      if( !((nextMovementPercentage > 0) || (nextMovementPercentage < -81))) {
+        // galleryWrapper.style.transform = `translateX(${nextMovementPercentage}%)`;
+        keyframes =[{transform:`translateX(${nextMovementPercentage}%`}];
+
+        galleryWrapper.animate(keyframes, { duration: 1400, fill: "forwards" });
+
     
-    initialMouse = event.touches[0].screenX;
-    isMouseDown = true;
-    galleryWrapper.style.cursor = "grab";
-    console.log("start")
-});
-
-  window.addEventListener("touchend", function(event){ //using window for mouseup becuase the user may leave the gallery div
-    // isMouseDown = false;
-    lastMovementPercentage = nextMovementPercentage;
-    initialMouse = event.touches[0].screenX;
-    galleryWrapper.style.cursor = "";
-    console.log("end")
-
-  });
-  galleryWrapper.addEventListener("touchmove", function(event){
-    // if (!isMouseDown) return;
-    console.log(event.touches[0].screenX);
-    const mouseX = initialMouse - event.touches[0].screenX;
-    const galleryWidth = galleryWrapper.offsetWidth/2;
-    movementPercentage = (mouseX) / galleryWidth * -100;
-    nextMovementPercentage = movementPercentage + lastMovementPercentage;
-
-    if (nextMovementPercentage > 1) {
-      nextMovementPercentage = 1;
-    }
-    else if (nextMovementPercentage < -55) {
-      nextMovementPercentage = -55;
-    }
-    if( !((nextMovementPercentage > 1) || (nextMovementPercentage < -55))) {
-      // galleryWrapper.style.transform = `translateX(${nextMovementPercentage}%)`;
-      keyframes =[{transform:`translateX(${nextMovementPercentage}%`}];
-
-      galleryWrapper.animate(keyframes, { duration: 1400, fill: "forwards" });
+      }
+    });
+  }
+  else {    // Code to execute if user is on a desktop screen
 
   
-    }
-  });
+    galleryWrapper.addEventListener("mousedown", function(event){
+      
+      initialMouse = event.screenX;;
+      isMouseDown = true;
+      galleryWrapper.style.cursor = "grab";
+      console.log("start")
+    });
+
+    window.addEventListener("mouseup", function(event){ //using window for mouseup becuase the user may leave the gallery div
+      isMouseDown = false;
+      lastMovementPercentage = nextMovementPercentage;
+      galleryWrapper.style.cursor = "";
+    });
+
+    galleryWrapper.addEventListener("mousemove", function(event){
+      console.log(nextMovementPercentage);
+      if (!isMouseDown) return;
+      const mouseX = initialMouse - event.screenX;
+      const galleryWidth = galleryWrapper.offsetWidth/2;
+      movementPercentage = (mouseX) / galleryWidth * -100;
+      nextMovementPercentage = movementPercentage + lastMovementPercentage;
+
+      if (nextMovementPercentage > 0) {
+        nextMovementPercentage = 0;
+      }
+      else if (nextMovementPercentage < -35) {
+        nextMovementPercentage = -35;
+      }
+      if( !((nextMovementPercentage > 0) || (nextMovementPercentage < -35))) {
+        // galleryWrapper.style.transform = `translateX(${nextMovementPercentage}%)`;
+        keyframes =[{transform:`translateX(${nextMovementPercentage}%`}];
+
+        galleryWrapper.animate(keyframes, { duration: 1400, fill: "forwards" });
+
+    
+      }
+    });
+  }
+
+
 
 
 }

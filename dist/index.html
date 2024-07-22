@@ -14,8 +14,11 @@
 
 </head>
 
-<body class="bg-color-body flex flex-col justify-center items-center overflow-x-hidden w-[100vw]"> <!-- EUREKA STOPS OVERFLOW! -->
-<div class="overflow-x-hidden w-full relative ">
+<body class="bg-color-body flex flex-col overflow-x-hidden justify-center items-center w-[100vw]">
+
+
+<div class="overflow-x-hidden md:overflow-auto lg:overflow-hidden relative bg-color-body flex flex-col justify-center items-center w-[100dvw]">  <!-- EUREKA STOPS OVERFLOW! -->
+    
 <div class="loading absolute z-50 top-0 bg-black w-screen  h-full text-white">
     Loading...
 </div>
@@ -89,6 +92,7 @@
 
           <div>
                 <h2 class="font-bold">Rockdale Magnet Fund</h2>
+
         </div></a>
     </div>
 
@@ -162,6 +166,9 @@
     <span class="material-symbols-outlined absolute bottom-0 mb-12 scale-125 opacity-70">
         arrow_downward
     </span>
+
+        
+
 </div>
 
 
@@ -243,91 +250,89 @@
     </div>
 </div>
 
-<h1 class="onScrollHidden p-12">Gallery</h1>
-<h2 class="onScrollHidden pb-12">Get a little insight into our students' exciting lives.</h2>
-<div>
-    <h4>
-        &nbsp;
-    </h4>
-</div>
+<div id="galleryPage" class="drop-shadow-sm flex flex-col lg:w-100% self-center items-center justify-center h-[100dvh] gap-8 md:gap-12 lg:flex-row-reverse lg:justify-evenly lg:gap-28 lg:-mb-50" ><!--MAIN BODY-->  
+    
+
+
 <div class="gallerySnippetContainerWrapper overflow-x-hidden w-screen">
+    
     <div class="flex gallerySnippetContainer select-none hover:cursor-pointer lg:px-16 min-w-[min-content] items-start gap-2 md:gap-4 lg:gap-8 ">
 
-    <div class="onScrollHidden gallerySnippetImage flex drop-shadow-md w-[40vw] md:w-[40vw] lg:w-[30vw]  max-w-sm  flex-col  gap-4">
+    <div class="onScrollHidden gallerySnippetImage flex drop-shadow-md w-[70vw] md:w-[40vw] lg:w-[30vw]  max-w-sm  flex-col  gap-4">
     
             <div class=" ">
                 <img class=" rounded-xl object-cover " src="./static/images/FallBall2019.jpg" draggable="false" alt="">
             </div>
 
-        <div class="onScrollHidden text-center hidden md:block lg:block ">
+        <div class="onScrollHidden text-center  md:block lg:block ">
             <h4>Students at our annual <span class="underline bold">Fall Ball</span> having a great time!</h4>
         </div> <!--CAPTION-->
         
     </div>
 
-    <div class="onScrollHidden gallerySnippetImage drop-shadow-md w-[40vw] md:w-[40vw] lg:w-[30vw] max-w-sm lg:flex flex-col  gap-8">
+    <div class="onScrollHidden gallerySnippetImage drop-shadow-md w-[70vw] md:w-[40vw] lg:w-[30vw] max-w-sm lg:flex flex-col  gap-8">
             <div class=" ">
                 <img class=" rounded-xl object-cover " src="./static/images/lab.jpg" draggable="false" alt="">
             </div>
 
-        <div class="onScrollHidden text-center hidden md:block lg:block ">
+        <div class="onScrollHidden text-center  md:block lg:block ">
             <h4>Students performing a chemistry lab!</h4>
         </div> <!--CAPTION-->
     </div>
 
-    <div class="onScrollHidden gallerySnippetImage drop-shadow-md w-[40vw] md:w-[40vw] lg:w-[30vw]  max-w-sm   lg:flex flex-col   gap-8 " >
+    <div class="onScrollHidden gallerySnippetImage drop-shadow-md w-[70vw] md:w-[40vw] lg:w-[30vw]  max-w-sm   lg:flex flex-col   gap-8 " >
             <div class="">
                 <img class=" rounded-xl object-cover " src="./static/images/ambassadors.jpg" draggable="false" alt="">
             </div>
-            <div class="relative onScrollHidden text-center w-auto text-wrap hidden md:block lg:block">
+            <div class="relative onScrollHidden text-center w-auto text-wrap  md:block lg:block">
                 <h4>Magnet Ambassadors posing for the camera before they tour prospective students around campus!</h4>
             </div> <!--CAPTION-->
      
     </div>
 
-    <div class="onScrollHidden gallerySnippetImage drop-shadow-sm w-[40vw] md:w-[40vw] lg:w-[30vw]  max-w-sm   lg:flex flex-col   gap-8" >
+    <div class="onScrollHidden gallerySnippetImage drop-shadow-sm w-[70vw] md:w-[40vw] lg:w-[30vw]  max-w-sm   lg:flex flex-col   gap-8" >
 
         <div class="">
             <img class=" rounded-xl object-cover " src="./static/images/scienceFair.jpg" draggable="false" alt="">
         </div>
 
-        <div class="onScrollHidden text-center w-auto hidden md:block lg:block">
+        <div class="onScrollHidden text-center w-auto  md:block lg:block">
             <h4>Class of 2025 student, Delano Page, presenting his science fair project at the <span class="underline bold">Georgia State Science Fair!</span></h4>
         </div> <!--CAPTION-->
 
     </div>
 
-    <div class="onScrollHidden gallerySnippetImage drop-shadow-lg w-[40vw] md:w-[40vw] lg:w-[30vw]  max-w-sm   lg:flex flex-col    gap-8" >
+    <div class="onScrollHidden gallerySnippetImage drop-shadow-lg w-[70vw] md:w-[40vw] lg:w-[30vw]  max-w-sm   lg:flex flex-col    gap-8" >
 
         <div class="">
             <img class=" rounded-xl object-cover " src="./static/images/stuco.jpg" draggable="false" alt="">
         </div>
 
-        <div class="onScrollHidden text-center w-auto hidden md:block lg:block">
+        <div class="onScrollHidden text-center w-auto  md:block lg:block">
             <h4>STUCO won 3rd at the Southern Association Leadership Competition!</h4>
         </div> <!--CAPTION-->
 
     </div>
 
-    <div class="onScrollHidden drop-shadow-md  lg:flex flex-col w-[40vw] md:w-[40vw] lg:w-[30vw]  max-w-sm  gap-8" >
+    <div class="onScrollHidden drop-shadow-md  lg:flex flex-col w-[70vw] md:w-[40vw] lg:w-[30vw]  max-w-sm  gap-8" >
 
         <div class="">
             <img class="rounded-xl object-cover  " src="./static/images/awards.jpg" draggable="false" alt="">
         </div>
 
-        <div class="onScrollHidden text-center w-auto hidden md:block lg:block">
+        <div class="onScrollHidden text-center w-auto  md:block lg:block">
             <h4>Mr. Hornbeck and Matilda Rogers reciving the 2024 teacher, and student awards.</h4>
         </div> <!--CAPTION-->
 
     </div>
 
-    <div class="onScrollHidden drop-shadow-md  lg:flex flex-col w-[40vw] md:w-[40vw] lg:w-[30vw]  max-w-sm  gap-8" >
+    <div class="onScrollHidden drop-shadow-md  lg:flex flex-col w-[70vw] md:w-[40vw] lg:w-[30vw]  max-w-sm  gap-8" >
 
         <div class="">
             <img class="rounded-xl object-cover aspect-square " src="./static/images/interview.jpg" draggable="false" alt="">
         </div>
 
-        <div class="onScrollHidden text-center w-auto hidden md:block lg:block">
+        <div class="onScrollHidden text-center w-auto  md:block lg:block">
             <h4>Our class of 2025 did a great job at internship interviews!</h4>
         </div> <!--CAPTION-->
 
@@ -335,6 +340,9 @@
 
 </div>
 </div>
+
+</div>
+
 
 
 <div class="flex justify-center gap-8 items-center flex-col drop-shadow-xl w-full h-[100dvh]"> <!--left text section-->
@@ -365,42 +373,45 @@
             </a> <!--button-->
           
         </div> 
-        <div class="w-screen flex justify-centers">
-        <div class="absolute bottom-0 p-4 text-center text-wrap ">
+    
+        <div class="absolute bottom-0 text-center p-4 text-wrap ">
             <h3>Rockdale Magnet Fund © 2024 <br>
                 Created by <a id="credit" class="text-blue-600 underline"href="https://noahbuchanan.me" target="_blank">Noah Buchanan</a></h3>
         </div>
                  
-        </div>
 </div>
 
 
 </body>
 
-<div class=" h-0 w-0 overflow-hidden"> <!--blue hexagon-->
+<div class=""> <!--landing page hexagons-->
+    <div class=" h-0 w-0 overflow-hidden"> <!--blue hexagon-->
 
     <div class="absolute pointer-events-none blur-sm drop-shadow-lg top-[-35px] left-[-150px] rotate-[620deg] scale-125 lg:scale-[1.2] lg:left-[50px] lg:top-[180px]">
-      <svg xmlns="http://www.w3.org/2000/svg" width="256px" height="256px" viewBox="0 0 24.00 24.00" fill="none">
-          <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke='#0C71C3'stroke-width="0.1" stroke-linejoin="miter"/>
-          </svg>  
-      </div>
-  </div>
-  
-  <div class=" h-0 w-0 overflow-hidden"> <!--yelllow hexagon-->
-  
-      <div class="absolute pointer-events-none blur-sm drop-shadow-lg top-[-35px] left-[-150px] rotate-[13deg] scale-125 lg:scale-[.8] lg:left-[450px] lg:top-[680px]">
+        <svg xmlns="http://www.w3.org/2000/svg" width="256px" height="256px" viewBox="0 0 24.00 24.00" fill="none">
+            <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke='#0C71C3'stroke-width="0.1" stroke-linejoin="miter"/>
+            </svg>  
+        </div>
+    </div>
+
+    <div class=" h-0 w-0 overflow-hidden"> <!--yelllow hexagon-->
+
+    <div class="absolute pointer-events-none blur-sm drop-shadow-lg top-[-35px] left-[-150px] rotate-[13deg] scale-125 lg:scale-[.8] lg:left-[450px] lg:top-[680px]">
         <svg xmlns="http://www.w3.org/2000/svg" width="256px" height="256px" viewBox="0 0 24.00 24.00" fill="none">
             <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke='#FFDE59'stroke-width="0.4" stroke-linejoin="miter"/>
             </svg>  
         </div>
     </div>
-    
-  <div class="absolute pointer-events-none blur-sm drop-shadow-lg bottom-[-35px] right-[-150px] rotate-[75deg] lg:scale-[3] lg:bottom-[300px] lg:right-[0px] lg:rotate-[10deg]"> <!--red hexagon-->
-      
-  <svg xmlns="http://www.w3.org/2000/svg" width="256px" height="256px" viewBox="0 0 24.00 24.00" fill="none">
-      <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke="#ff0000" stroke-width=".05" stroke-linejoin="miter"/>
-  </svg>  </div>
-  </div>
+
+    <div class="h-0 w-0 overflow-hidden">
+        <div class="absolute pointer-events-none blur-sm drop-shadow-lg top-[-35px] right-[-150px] rotate-[75deg]  lg:scale-[2.5] lg:top-[10vw] lg:right-[20vw] lg:rotate-[40deg]"> <!--red hexagon-->
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="256px" height="256px" viewBox="0 0 24.00 24.00" fill="none">
+            <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke="#ff0000" stroke-width=".05" stroke-linejoin="miter"/>
+        </svg>  </div>
+        </div>
+    </div>
+</div>
   
   
 
