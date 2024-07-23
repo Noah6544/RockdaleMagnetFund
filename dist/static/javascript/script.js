@@ -105,7 +105,7 @@ if (currentPage == 'index.html' || !currentPage ||  currentPage == ""){
         // galleryWrapper.style.transform = `translateX(${nextMovementPercentage}%)`;
         keyframes =[{transform:`translateX(${nextMovementPercentage}%`}];
 
-        galleryWrapper.animate(keyframes, { duration: 1400, fill: "forwards" });
+        galleryWrapper.animate(keyframes, { duration: 400, fill: "forwards" });
 
     
       }
@@ -116,7 +116,7 @@ if (currentPage == 'index.html' || !currentPage ||  currentPage == ""){
   
     galleryWrapper.addEventListener("mousedown", function(event){
       
-      initialMouse = event.screenX;;
+      initialMouse = event.screenX;
       isMouseDown = true;
       galleryWrapper.style.cursor = "grab";
       console.log("start")

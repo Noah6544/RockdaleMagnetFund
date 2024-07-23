@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="build.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
     <link href="custom.css" rel="stylesheet">
     <script src="./static/javascript/script.js" defer></script>
     <title>Annual Dues</title>
@@ -15,7 +15,6 @@
 <div class="fixed top-0 right-0 z-50 m-8 p-1 lg:hidden hover:opacity-90 cursor-pointer transition-all duration-200 origin-center hover:scale-x-110 ease-exetremeBounce" id="menu">
 
     <i class="rounded-full block w-8 h-[4px] bg-color-menu"></i>
-
     <i class="translate-y-1 rounded-full block w-8 h-[4px] bg-color-menu"></i>
     <i class=" translate-y-2 rounded-full block w-8 h-[4px] bg-color-menu"></i>
 
@@ -82,6 +81,7 @@
 
           <div>
                 <h2 class="font-bold">Rockdale Magnet Fund</h2>
+
         </div></a>
     </div>
 
@@ -106,7 +106,7 @@
                 <h3>Alumi Scholarships</h3>
             </div>
         </a>
-        <a href="./html" class="hover:text-color-button">
+        <a href="./annualDues" class="hover:text-color-button">
             <div class="">
                 <h3>Annual Dues</h3>
             </div>
@@ -121,18 +121,19 @@
 </div>   <!--desktop navbar-->
 
 
-<div id="landingPage" class="drop-shadow-sm flex flex-col lg:w-100% self-center items-center justify-center h-[100dvh] gap-8 md:gap-12 lg:flex-row-reverse lg:justify-evenly lg:gap-28 " ><!--MAIN BODY--> 
+<div id="landingPage" class="flex  lg:w-full items-center justify-center h-[100dvh] gap-8 md:gap-12  lg:gap-28 " ><!--MAIN BODY--> 
 
  
 
-    <div class="flex gap-8 md:gap-12 items-center flex-col w-4/6 lg:text-left lg:gap-10 lg:items-start"> <!--left text section-->
+    <div class="flex gap-8 md:gap-12 items-center justify-center flex-col lg:text-left lg:gap-10 lg:items-start"> <!--left text section-->
 
-        <div class="font-medium text-nowrap lg:text-left lg:w-full ">
+        <div class="font-medium text-nowrap md:text-left lg:text-left lg:w-full ">
             <h1>Annual Dues</h1>
         </div>
         
-        <div class=" md:w-3/4 lg:text-left lg:w-full">
-            <h2 class="font-medium">Rockdale Magnet Fund Dues 2024-2025</h2>
+        <div class="text-center lg:text-left lg:w-full">
+            <h2 class=" 
+            text-center lg:text-left font-medium">Rockdale Magnet Fund Dues 2024-2025</h2>
             <h2>
                 <br>- Dues are $220 per student for all grade levels
                 <br>- For families, each additional student is $120.
@@ -142,8 +143,8 @@
         <div class="flex  lg:gap-12"> <!--button section-->
 
             <a href="https://buy.stripe.com/test_6oEaEO2dKc6fgRW7ss" target="_blank">
-            <div class="flex items-center min-w-100% min-w-max min-h-10 text-white text-center drop-shadow-md rounded-md  bg-color-button transition-all duration-100 cursor-pointer  hover:bg-color-button-hover  md:hover:px-8  lg:w-full lg:px-6 lg:mr-auto">
-                <h3>Pay Now</h3>
+            <div class="flex items-center justify-center min-w-20  min-h-10 text-white text-center drop-shadow-md rounded-md bg-color-button transition-all duration-100 cursor-pointer hover:bg-color-button-hover  md:hover:px-8  lg:w-full lg:px-6 lg:mr-auto">
+                <h3 class="">Pay Now</h3>
             </div>
             </a> <!--button-->
             
@@ -151,18 +152,17 @@
 
     </div> 
 
+    <div class="w-100% hidden lg:flex justify-center"> <!--right image section-->
+        <img class="drop-shadow h-auto min-w-24 w-[30vw] max-w-32 lg:w-[16vw] lg:max-w-none" src="./static/images/RMSST Square.png" alt="">
+    </div> <!--IMAGE-->
+
      
 </div>
 
 
 
-<div class="fixed top-0 right-0 z-50 m-8 p-1 lg:hidden hover:opacity-90 cursor-pointer transition-all duration-200 origin-center hover:scale-x-110 ease-exetremeBounce" id="menu">
 
-    <i class="rounded-full block w-8 h-[4px] bg-color-menu"></i>
-    <i class="translate-y-1 rounded-full block w-8 h-[4px] bg-color-menu"></i>
-    <i class=" translate-y-2 rounded-full block w-8 h-[4px] bg-color-menu"></i>
-
-</div>  
+ 
 <div class="absolute bottom-0 p-4 mx-auto text-wrap text-center">
     <h3>Rockdale Magnet Fund © 2024 <br>
         Created by <a class="text-blue-600 underline"href="https://noahbuchanan.me" target="_blank">Noah Buchanan</a></h3>
