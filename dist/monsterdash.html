@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rockdale Magnet School for Science and Technology (RMSST) provides a dynamic and unique learning environment designed for high achieving students with an interest and aptitude in mathematics, science, and technology.  RMSST is a school within a school, housed at Rockdale County High School, which delivers state-of-the-art technology and advanced classroom and laboratory experiences to full-time high school students. ">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    
+    <link href="output.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
+    <script src="./static/javascript/script.js" defer></script>
+    <title>Rockdale Magnet Fund</title>
+    <link rel="icon" type="image/x-icon" href="./static/images/favicon.png">
+
+</head>
+
+<body class="bg-color-body flex flex-col overflow-x-hidden justify-center items-center w-[100vw]">
+
+
+<div class="overflow-x-hidden md:overflow-auto lg:overflow-hidden relative bg-color-body flex flex-col justify-center items-center w-[100dvw]">  <!-- EUREKA STOPS OVERFLOW! -->
+    
+<div class="loading absolute z-50 top-0 bg-black w-screen  h-full text-white">
+    Loading...
+</div>
+
+<div class="fixed top-0 right-0 z-50 m-8 p-1 lg:hidden hover:opacity-90 cursor-pointer transition-all duration-200 origin-center hover:scale-x-110 ease-exetremeBounce" id="menu">
+
+    <i class="rounded-full block w-8 h-[4px] bg-color-menu"></i>
+    <i class="translate-y-1 rounded-full block w-8 h-[4px] bg-color-menu"></i>
+    <i class=" translate-y-2 rounded-full block w-8 h-[4px] bg-color-menu"></i>
+
+</div>  
+
+<div id="mobileNavbar" class="fixed opacity-0 pointer-events-none top-0 items-center justify-center z-40 transition-all ease-in duration-200  lg:hidden "><!--mobile navbar-->
+
+    <div class="flex flex-col h-screen w-screen justify-evenly bg-color-dropdown-navbar  drop-shadow-lg"> 
+
+        <div class="w-screen pointer-events-none h-screen  opacity-20 py-3 gap-3 absolute flex top-0 left-0 justify-center blur-sm items-center">
+            <img class="drop-shadow min-w-12 w-[100vw] max-w"src="./static/images/RMSST Square.png" alt="">            
+        </div>
+
+        <div class="flex flex-col justify-center items-center gap-8 drop-shadow-md ">
+            <a href="./about" class="mobileNavbarListHidden hover:text-color-button ">
+                <div class="">
+                    <h2>About</h2>
+                </div>
+                </a>
+            <a href="./contact" class="mobileNavbarListHidden hover:text-color-button">
+                <div class="">
+                    <h2>Contact</h2>
+                </div>
+                </a>
+            <a href="./monsterdash" class="mobileNavbarListHidden hover:text-color-button">
+                <div class="">
+                    <h2>MonsterDash</h2>
+                </div>
+                </a>
+            <a href="./scholarships" class="mobileNavbarListHidden hover:text-color-button">
+                <div class="">
+                    <h2>Alumni Scholarships</h2>
+                </div>
+                </a>
+            <a href="./annualDues" class="mobileNavbarListHidden hover:text-color-button">
+                <div class="">
+                    <h2>Annual Dues</h2>
+                </div>
+                </a>
+            <a href="./donations" class="mobileNavbarListHidden hover:text-color-button">
+                <div class="">
+                    <h2>Donations</h2>
+                </div>
+                </a>
+            <a href="./" class="mobileNavbarListHidden hover:text-color-button">
+                <div>
+                    <h2>Home</h2>
+                </div>
+            </a>
+
+        </div>
+    </div>   
+
+
+</div>  
+  
+
+<div id="desktopNavbar" class="hidden fixed top-0 left-0 lg:w-screen justify-between items-center bg-color-navbar z-50 drop-shadow-lg h-16 opacity-100 lg:flex ">
+
+    <div class="flex p-2 items-center gap-4 h-full justify-between shrink">
+        <div class="h-full">
+            <a href="./"><img class="w-auto h-full" src="./static/images/RMSST Square.png" alt="">
+        </div>
+
+          <div>
+                <h2 class="font-bold">Rockdale Magnet Fund</h2>
+
+        </div></a>
+    </div>
+
+    <div  class="flex pr-8 items-center h-full p-2 gap-4 ">
+        <a href="./about" class="hover:text-color-button  duration-150 ease-in-out">
+            <div class="">
+                <h3>About</h3>
+            </div>
+        </a>
+        <a href="./contact" class="hover:text-color-button duration-150 ease-in-out">
+            <div class="">
+                <h3>Contact</h3>
+            </div>
+        </a>
+        <a href="./monsterdash" class="hover:text-color-button duration-150 ease-in-out">
+            <div class="">
+                <h3>MonsterDash</h3>
+            </div>
+        </a>
+        <a href="./scholarships" class="hover:text-color-button duration-150 ease-in-out">
+            <div class="">
+                <h3>Alumni Scholarships</h3>
+            </div>
+        </a>
+        <a href="./annualDues" class="hover:text-color-button duration-150 ease-in-out">
+            <div class="">
+                <h3>Annual Dues</h3>
+            </div>
+        </a>
+        <a href="./donations" class="hover:text-color-button duration-150 ease-in-out">
+            <div class="">
+                <h3>Donations</h3>
+            </div>
+        </a>
+    </div>
+    
+</div>   <!--desktop navbar-->
+
+
+<div id="landingPage" class="relative z-10 flex flex-col lg:w-100% self-center items-center justify-center h-[100dvh] gap-8 md:gap-12 lg:flex-row-reverse lg:justify-evenly lg:gap-28 lg:-mb-50" ><!--MAIN BODY--> 
+
+    <div class="flex w-100% justify-center"> <!--right image section-->
+        <img class="drop-shadow h-auto min-w-24 sm:w-[50vw] md:w-[40vw] max-w-72 lg:w-[25vw] lg:max-w-xl" src="./static/images/monsterdashlogo.png" alt="">
+    </div> <!--IMAGE-->
+
+    <div class="flex gap-8 md:gap-12 items-center flex-col w-4/6 lg:text-left lg:gap-10 lg:items-start"> <!--left text section-->
+
+        <div class="font-medium text-nowrap lg:text-left lg:w-full ">
+            <h1>MonsterDash 2025</h1>
+        </div>
+        
+        <div class=" md:w-full ">
+            <h2 class="text-center lg:text-left">An amazing evening of fun and fitness!</h2>
+        </div>
+
+
+            <a href="./annualDues" target="_blank">
+                <div class="flex justify-center items-center min-w-28 min-h-10 text-white text-center drop-shadow-md rounded-md  bg-color-button transition-all duration-100 cursor-pointer  hover:bg-color-button-hover  md:hover:px-4 lg:hover:px-8 lg:w-full lg:px-6 lg:mr-auto">
+                    <h3>Register</h3>
+                </div>
+            </a> <!--button-->
+
+          
+
+    </div> 
+
+    <span class="material-symbols-outlined absolute bottom-0 mb-12 scale-125 opacity-70">
+        arrow_downward
+    </span>
+
+        
+
+</div>
+
+
+
+<div class=" justify-center h-full w-full lg:flex-row-reverse lg:flex lg:w-3/4 lg:h-[100dvh] gap-20"> 
+
+    <div class="flex h-full lg:flex flex-col justify-center items-center">
+        <div class="onScrollHidden w-[80vw] drop-shadow-lg md:w-[60vw] lg:max-w-xl lg:w-[35vw] flex self-center justify-center">
+        <div class="hexagon-mask-image ">
+            <img class="rounded-xl object-cover  hover:scale-110 duration-500 cursor-pointer" src="./static/images/monsterash.jpg" alt="">
+        </div>
+        </div>
+
+        <div class="h4 onScrollHidden text-center w-3/4 md:w-full lg:w-full">
+            <h4 class="">Students lining up at the start of the race!</h4>
+        </div> <!--CAPTION-->
+    </div>
+
+    <div id="mainbody" class="drop-shadow-xl flex flex-col w-full items-center justify-center h-[130dvh] md:h-[80vw] gap-16 lg:flex-col-reverse lg:h-full lg:items-start "><!--MAIN BODY--> 
+    <div class="flex gap-8 items-center flex-col md:w-3/4 justify-center lg:w-auto lg:text-left"> <!--left text section-->
+        <div class="onScrollHidden font-medium text-nowrap lg:text-left ">
+            <h1>Get Up and Move!</h1>
+        </div>
+        <div class="onScrollHidden w-4/5 text-center lg:w-auto ">
+
+
+
+            <h2>This year, we are inviting our local community to participate in-person in our annual Monster Dash 5K. This isn’t a competitive challenge or race, it’s collaborative. We are all getting our miles in at our own pace, but we’re in this together. Some are chasing their PRs, and others who are taking a leisurely evening walk at sunset around our course.</h2>
+            <br>
+            <h2><span class="onScrollHidden">All registered runners and walkers will receive a beautiful custom-designed race t-shirt. Sign up to run with us, grab your family and friends, and get out and get MOVING!
+                <span></h2>
+        
+        </div>
+    </div>
+
+    </div>
+    
+    <div class="absolute bottom-0 text-center flex w-screen self-center justify-center p-4 text-wrap ">
+        <h3>Rockdale Magnet Fund © 2024 <br>
+            Created by <a id="credit" class="text-blue-600 underline"href="https://noahbuchanan.me" target="_blank">Noah Buchanan</a></h3>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+
+<div class="-z-0"> <!--landing page hexagons-->
+    <div class=" h-0 w-0 overflow-hidden"> <!--blue hexagon-->
+
+    <div class="absolute pointer-events-none blur-sm drop-shadow-lg top-[0px] left-[-50px] rotate-[520deg] scale-[.5] md:top-[100px] md:left-[50px] md:scale-[.6] lg:scale-[1.3] lg:left-[53px] lg:top-[180px]">
+        <svg xmlns="http://www.w3.org/2000/svg" width="256px" height="256px" viewBox="0 0 24.00 24.00" fill="none">
+            <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke='#FFDE59'stroke-width="0.1" stroke-linejoin="miter"/>
+            </svg>  
+        </div>
+    </div>
+
+    <div class=" h-0 w-0 overflow-hidden"> <!--yellow hexagon-->
+
+        <div class="absolute pointer-events-none opacity-75 blur-sm drop-shadow-lg top-[600px] right-[-50px] rotate-[13deg] scale-[.5] md:top-[650px] md:right-[30px] md:scale-[.55] lg:scale-[2]  lg:right-[60px] lg:top-[20px]">
+        <svg xmlns="http://www.w3.org/2000/svg" width="256px" height="256px" viewBox="0 0 24.00 24.00" fill="none">
+            <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke='#ff0000'stroke-width=".1" stroke-linejoin="miter"/>
+            </svg>  
+        </div>
+    </div>
+
+    <div class="h-0 w-0 overflow-hidden">
+        <div class="absolute pointer-events-none sm:hidden lg:block blur-sm drop-shadow-lg rotate-[75deg] scale-[.7] lg:top-[650px] lg:left-[400px] lg:rotate-[40deg]"> <!--red hexagon-->
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="256px" height="256px" viewBox="0 0 24.00 24.00" fill="none">
+            <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke="#0C71C3" stroke-width=".04" stroke-linejoin="miter"/>
+        </svg>  
+        </div>
+        
+    </div>
+
+
+    <div class="absolute pointer-events-none blur-sm drop-shadow-lg top-[135px] right-[-50px] rotate-[40deg] scale-[.5] lg:scale-[3.5] lg:right-[1300px] lg:top-[1335px]">
+        <svg xmlns="http://www.w3.org/2000/svg" width="256px" height="256px" viewBox="0 0 24.00 24.00" fill="none">
+            <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke='#FFDE59'stroke-width="0.04" stroke-linejoin="miter"/>
+            </svg>  
+
+    </div>
+
+
+    <div class=" h-0 w-0 overflow-hidden"> <!--yellow hexagon-->
+
+        <div class="absolute pointer-events-none blur-sm opacity-55 drop-shadow-lg top-[2050px] left-[-30px] rotate-[-12deg] scale-[.5] lg:scale-[4.5] lg:left-[1200px] lg:top-[2250px]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="256px" height="256px" viewBox="0 0 24.00 24.00" fill="none">
+                <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke='#0C71C3'stroke-width="0.2" stroke-linejoin="miter"/>
+                </svg>  
+        </div>
+
+    </div>
+
+
+
+  
+</div>
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
