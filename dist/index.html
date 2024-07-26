@@ -36,7 +36,7 @@
     <div class="flex flex-col h-screen w-screen justify-evenly bg-color-dropdown-navbar  drop-shadow-lg"> 
 
         <div class="w-screen pointer-events-none h-screen  opacity-20 py-3 gap-3 absolute flex top-0 left-0 justify-center blur-sm items-center">
-            <img class="drop-shadow min-w-12 w-[100vw] max-w-96"src="./static/images/RMSST Square.png" alt="">            
+            <img class="drop-shadow min-w-12 w-[100vw] max-w"src="./static/images/RMSST Square.png" alt="">            
         </div>
 
         <div class="flex flex-col justify-center items-center gap-8 drop-shadow-md ">
@@ -57,7 +57,7 @@
                 </a>
             <a href="./scholarships" class="mobileNavbarListHidden hover:text-color-button">
                 <div class="">
-                    <h2>Alumi Scholarships</h2>
+                    <h2>Alumni Scholarships</h2>
                 </div>
                 </a>
             <a href="./annualDues" class="mobileNavbarListHidden hover:text-color-button">
@@ -83,7 +83,7 @@
 </div>  
   
 
-<div id="desktopNavbar" class="hidden fixed top-0 left-0 lg:w-screen justify-between items-center bg-color-navbar z-10 drop-shadow-lg h-16 opacity-100 lg:flex ">
+<div id="desktopNavbar" class="hidden fixed top-0 left-0 lg:w-screen justify-between items-center bg-color-navbar z-50 drop-shadow-lg h-16 opacity-100 lg:flex ">
 
     <div class="flex p-2 items-center gap-4 h-full justify-between shrink">
         <div class="h-full">
@@ -97,32 +97,32 @@
     </div>
 
     <div  class="flex pr-8 items-center h-full p-2 gap-4 ">
-        <a href="./about" class="hover:text-color-button">
+        <a href="./about" class="hover:text-color-button  duration-150 ease-in-out">
             <div class="">
                 <h3>About</h3>
             </div>
         </a>
-        <a href="./contact" class="hover:text-color-button">
+        <a href="./contact" class="hover:text-color-button duration-150 ease-in-out">
             <div class="">
                 <h3>Contact</h3>
             </div>
         </a>
-        <a href="./fundraising" class="hover:text-color-button">
+        <a href="./fundraising" class="hover:text-color-button duration-150 ease-in-out">
             <div class="">
                 <h3>Fundraising</h3>
             </div>
         </a>
-        <a href="./scholarships" class="hover:text-color-button">
+        <a href="./scholarships" class="hover:text-color-button duration-150 ease-in-out">
             <div class="">
-                <h3>Alumi Scholarships</h3>
+                <h3>Alumni Scholarships</h3>
             </div>
         </a>
-        <a href="./annualDues" class="hover:text-color-button">
+        <a href="./annualDues" class="hover:text-color-button duration-150 ease-in-out">
             <div class="">
                 <h3>Annual Dues</h3>
             </div>
         </a>
-        <a href="./donations" class="hover:text-color-button">
+        <a href="./donations" class="hover:text-color-button duration-150 ease-in-out">
             <div class="">
                 <h3>Donations</h3>
             </div>
@@ -132,7 +132,7 @@
 </div>   <!--desktop navbar-->
 
 
-<div id="landingPage" class=" z-10 flex flex-col lg:w-100% self-center items-center justify-center h-[100dvh] gap-8 md:gap-12 lg:flex-row-reverse lg:justify-evenly lg:gap-28 lg:-mb-50" ><!--MAIN BODY--> 
+<div id="landingPage" class="relative z-10 flex flex-col lg:w-100% self-center items-center justify-center h-[100dvh] gap-8 md:gap-12 lg:flex-row-reverse lg:justify-evenly lg:gap-28 lg:-mb-50" ><!--MAIN BODY--> 
 
     <div class="flex w-100% justify-center"> <!--right image section-->
         <img class="drop-shadow h-auto min-w-24 w-[30vw] max-w-32 lg:w-[16vw] lg:max-w-none" src="./static/images/RMSST Square.png" alt="">
@@ -145,7 +145,7 @@
         </div>
         
         <div class=" md:w-3/4 ">
-            <h2 class="text-center md:text-left lg:text-left">Providing students with the support and resources to change the world.</h2>
+            <h2 class="text-center lg:text-left">Providing students with the support and resources to change the world.</h2>
         </div>
 
         <div class="flex gap-8 justify-around lg:w-3/4 lg:gap-12"> <!--button section-->
@@ -176,9 +176,9 @@
 <div class=" justify-center h-full w-full lg:flex-row-reverse lg:flex lg:w-3/4 lg:h-[100dvh] gap-20"> 
 
     <div class="flex h-full lg:flex flex-col justify-center items-center">
-        <div class="onScrollHidden w-[80vw] drop-shadow-lg md:w-[65vw] lg:w-[35vw] flex self-center justify-center">
+        <div class="onScrollHidden w-[80vw] drop-shadow-lg md:w-[60vw] lg:max-w-xl lg:w-[35vw] flex self-center justify-center">
         <div class="hexagon-mask-image ">
-            <img class="rounded-xl object-cover " src="./static/images/isefMicroscope.jpeg" alt="">
+            <img class="rounded-xl object-cover  hover:scale-110 duration-500 cursor-pointer" src="./static/images/isefMicroscope.jpeg" alt="">
         </div>
         </div>
 
@@ -207,7 +207,7 @@
 
 
 
-<div class=" z-10 flex flex-col-reverse justify-center items-center h-auto w-100% lg:flex-row-reverse lg:flex lg:w-3/4 lg:gap-2"> 
+<div class="z-10 flex flex-col-reverse justify-center items-center h-auto w-100% lg:flex-row-reverse lg:flex lg:w-3/4 lg:gap-2"> 
 
     <div class="hidden lg:flex h-full flex-col justify-center items-center">
         <div class="onScrollHidden drop-shadow-lg md:w-[65vw] lg:w-[35vw] flex self-center justify-center">
@@ -323,7 +323,7 @@
         </div>
 
         <div class="onScrollHidden text-center w-auto  md:block lg:block">
-            <h4>Mr. Hornbeck and Matilda Rogers reciving the 2024 teacher, and student awards.</h4>
+            <h4>Mr. Hornbeck and Matilda Rogers receiving the 2024 teacher, and student awards.</h4>
         </div> <!--CAPTION-->
 
     </div>
@@ -389,7 +389,7 @@
 <div class="-z-0"> <!--landing page hexagons-->
     <div class=" h-0 w-0 overflow-hidden"> <!--blue hexagon-->
 
-    <div class="absolute pointer-events-none blur-sm drop-shadow-lg top-[-45px] left-[-150px] rotate-[620deg] scale-[1.25] md:top-[-45px] md:left-[-150px] md:scale-[2] lg:scale-[1.2] lg:left-[50px] lg:top-[180px]">
+    <div class="absolute pointer-events-none blur-sm drop-shadow-lg top-[0px] left-[-50px] rotate-[620deg] scale-[.55] md:top-[100px] md:left-[50px] md:scale-[.6] lg:scale-[1.2] lg:left-[50px] lg:top-[180px]">
         <svg xmlns="http://www.w3.org/2000/svg" width="256px" height="256px" viewBox="0 0 24.00 24.00" fill="none">
             <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke='#0C71C3'stroke-width="0.1" stroke-linejoin="miter"/>
             </svg>  
@@ -398,35 +398,37 @@
 
     <div class=" h-0 w-0 overflow-hidden"> <!--yellow hexagon-->
 
-    <div class="absolute pointer-events-none blur-sm drop-shadow-lg top-[450px] left-[250px] rotate-[43deg] scale-[1.3] md:left-0 md:right-[10px] lg:scale-[.8] lg:left-[450px] lg:top-[680px]">
+        <div class="absolute pointer-events-none opacity-75 blur-sm drop-shadow-lg top-[600px] right-[-50px] rotate-[43deg] scale-[.5] md:top-[65z0px] md:right-[30px] md:scale-[.55] lg:scale-[2]  lg:right-[350px] lg:top-[10px]">
         <svg xmlns="http://www.w3.org/2000/svg" width="256px" height="256px" viewBox="0 0 24.00 24.00" fill="none">
-            <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke='#FFDE59'stroke-width="0.4" stroke-linejoin="miter"/>
+            <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke='#FFDE59'stroke-width=".15" stroke-linejoin="miter"/>
             </svg>  
         </div>
     </div>
 
     <div class="h-0 w-0 overflow-hidden">
-        <div class="absolute pointer-events-none  blur-sm drop-shadow-lg top-[1105px] left-[-100px] rotate-[75deg]  scale-[1.4] lg:scale-[2.5] lg:top-[10vw] lg:right-[20vw] lg:rotate-[40deg]"> <!--red hexagon-->
+        <div class="absolute pointer-events-none sm:hidden lg:block blur-sm drop-shadow-lg rotate-[75deg] scale-[.7] lg:top-[650px] lg:left-[400px] lg:rotate-[40deg]"> <!--red hexagon-->
         
         <svg xmlns="http://www.w3.org/2000/svg" width="256px" height="256px" viewBox="0 0 24.00 24.00" fill="none">
-            <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke="#ff0000" stroke-width=".05" stroke-linejoin="miter"/>
-        </svg>  </div>
+            <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke="#ff0000" stroke-width=".04" stroke-linejoin="miter"/>
+        </svg>  
         </div>
+        
     </div>
 
 
-    <div class="absolute pointer-events-none blur-sm drop-shadow-lg top-[1635px] right-[-150px] rotate-[20deg] scale-125 lg:scale-[1.2] lg:left-[50px] lg:top-[180px]">
+    <div class="absolute pointer-events-none blur-sm drop-shadow-lg top-[135px] right-[-50px] rotate-[40deg] scale-[.5] lg:scale-[3.5] lg:right-[1300px] lg:top-[1335px]">
         <svg xmlns="http://www.w3.org/2000/svg" width="256px" height="256px" viewBox="0 0 24.00 24.00" fill="none">
-            <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke='#0C71C3'stroke-width="0.1" stroke-linejoin="miter"/>
+            <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke='#0C71C3'stroke-width="0.04" stroke-linejoin="miter"/>
             </svg>  
-        </div>
+
     </div>
+
 
     <div class=" h-0 w-0 overflow-hidden"> <!--yellow hexagon-->
 
-        <div class="absolute pointer-events-none blur-md drop-shadow-lg top-[2350px] left-[-80px] rotate-[72deg] scale-[1] lg:scale-[.8] lg:left-[450px] lg:top-[680px]">
+        <div class="absolute pointer-events-none blur-sm opacity-55 drop-shadow-lg top-[2050px] left-[-30px] rotate-[-12deg] scale-[.5] lg:scale-[2] lg:left-[400px] lg:top-[2350px]">
             <svg xmlns="http://www.w3.org/2000/svg" width="256px" height="256px" viewBox="0 0 24.00 24.00" fill="none">
-                <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke='#FFDE59'stroke-width="0.4" stroke-linejoin="miter"/>
+                <path d="M2.46148 12.8001C2.29321 12.5087 2.20908 12.3629 2.17615 12.208C2.14701 12.0709 2.14701 11.9293 2.17615 11.7922C2.20908 11.6373 2.29321 11.4915 2.46148 11.2001L6.53772 4.13984C6.70598 3.8484 6.79011 3.70268 6.90782 3.5967C7.01196 3.50293 7.13465 3.43209 7.26793 3.38879C7.41856 3.33984 7.58683 3.33984 7.92336 3.33984H16.0758C16.4124 3.33984 16.5806 3.33984 16.7313 3.38879C16.8645 3.43209 16.9872 3.50293 17.0914 3.5967C17.2091 3.70268 17.2932 3.8484 17.4615 4.13984L21.5377 11.2001C21.706 11.4915 21.7901 11.6373 21.823 11.7922C21.8522 11.9293 21.8522 12.0709 21.823 12.208C21.7901 12.3629 21.706 12.5087 21.5377 12.8001L17.4615 19.8604C17.2932 20.1518 17.2091 20.2975 17.0914 20.4035C16.9872 20.4973 16.8645 20.5681 16.7313 20.6114C16.5806 20.6604 16.4124 20.6604 16.0758 20.6604H7.92336C7.58683 20.6604 7.41856 20.6604 7.26793 20.6114C7.13465 20.5681 7.01196 20.4973 6.90782 20.4035C6.79011 20.2975 6.70598 20.1518 6.53772 19.8604L2.46148 12.8001Z" stroke='#FFDE59'stroke-width="0.1" stroke-linejoin="miter"/>
                 </svg>  
         </div>
 
@@ -434,12 +436,10 @@
 
 
 
+  
 </div>
-  
-  
 
 
-</div>
 
 </html>
 

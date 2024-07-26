@@ -20,8 +20,9 @@
         @apply md:text-xl;
     }
     h4 { /* caption size */
-        @apply text-lg;
+        @apply text-base;
         @apply md:text-xl;
+        @apply lg:text-lg;
         @apply italic;
         /* @apply w-3/4;  this wont work for caption */
     }
