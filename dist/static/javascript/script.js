@@ -65,6 +65,7 @@ let currentPage = (((window.location.pathname).split('/'))).pop()
 
 if (currentPage == 'index.html' || !currentPage ||  currentPage == ""){
   galleryWrapper = document.getElementsByClassName("gallerySnippetContainer")[0];
+  galleryContainerWrapper = document.getElementsByClassName("gallerySnippetContainerWrapper")[0];
   var isMouseDown = false;
   var initialMouse = 0;
   var lastMovementPercentage = 0;
@@ -73,43 +74,7 @@ if (currentPage == 'index.html' || !currentPage ||  currentPage == ""){
 
 
   if ( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {    // Code to execute if user is on a mobile screen
-  
-    galleryWrapper.addEventListener("touchstart", function(event){
-      initialMouse = event.touches[0].screenX;
-      isMouseDown = true;
-      galleryWrapper.style.cursor = "grab";
-      console.log("start")
-    });
-
-    window.addEventListener("touchend", function(event){ //using window for mouseup becuase the user may leave the gallery div
-      isMouseDown = false;
-      lastMovementPercentage = nextMovementPercentage;
-      galleryWrapper.style.cursor = "";
-    });
-
-    galleryWrapper.addEventListener("touchmove", function(event){
-      console.log(nextMovementPercentage);
-      if (!isMouseDown) return;
-      const mouseX = initialMouse - event.touches[0].screenX;
-      const galleryWidth = galleryWrapper.offsetWidth/2;
-      movementPercentage = (mouseX) / galleryWidth * -100;
-      nextMovementPercentage = movementPercentage + lastMovementPercentage;
-
-      if (nextMovementPercentage > 0) {
-        nextMovementPercentage = 0;
-      }
-      else if (nextMovementPercentage < -81) {
-        nextMovementPercentage = -81;
-      }
-      if( !((nextMovementPercentage > 0) || (nextMovementPercentage < -81))) {
-        // galleryWrapper.style.transform = `translateX(${nextMovementPercentage}%)`;
-        keyframes =[{transform:`translateX(${nextMovementPercentage}%`}];
-
-        galleryWrapper.animate(keyframes, { duration: 400, fill: "forwards" });
-
-    
-      }
-    });
+  // do not do anything if we're on mobile because we can just scroll
   }
   else {    // Code to execute if user is on a desktop screen
 
@@ -146,12 +111,21 @@ if (currentPage == 'index.html' || !currentPage ||  currentPage == ""){
         // galleryWrapper.style.transform = `translateX(${nextMovementPercentage}%)`;
         keyframes =[{transform:`translateX(${nextMovementPercentage}%`}];
 
-        galleryWrapper.animate(keyframes, { duration: 1400, fill: "forwards" });
+        galleryWrapper.animate(keyframes, { duration: 1000, fill: "forwards" });
 
     
       }
     });
+    
+
+    galleryContainerWrapper.addEventListener("scroll", function(event){
+      console.log(galleryContainerWrapper.scrollLeft)
+    }
+    )
+
   }
+
+
 
 
 
