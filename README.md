@@ -1,6 +1,6 @@
 **Second Freelance WebDev Gig**
 
-I was hired to design, develop, and deploy the [Rockdale Magnet Fund Website](rockdalemagnetfund.org) website. 
+I was hired to design, develop, and deploy the [Rockdale Magnet Fund Website](https://rockdalemagnetfund.org) website. 
 
 This website was for my high school: Rockdale Magnet School For Science and Technology
 
