@@ -958,6 +958,12 @@ h4{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.scale-\[\.3\]{
+  --tw-scale-x: .3;
+  --tw-scale-y: .3;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .scale-\[\.55\]{
   --tw-scale-x: .55;
   --tw-scale-y: .55;
@@ -1060,6 +1066,10 @@ h4{
 
 .overflow-x-scroll{
   overflow-x: scroll;
+}
+
+.whitespace-nowrap{
+  white-space: nowrap;
 }
 
 .text-wrap{
